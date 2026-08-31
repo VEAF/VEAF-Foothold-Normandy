@@ -58,7 +58,7 @@ security:
   password_mm_hashes:
     - "99685b3c7cb1fb08a829fc97d4a8564fc5f9435a"
 
-# VEAF modules â€” from the 'foothold' conversion profile.
+# VEAF modules — from the 'foothold' conversion profile.
 
 # VEAF modules — from the 'foothold-ww2' conversion profile.
 modules:
