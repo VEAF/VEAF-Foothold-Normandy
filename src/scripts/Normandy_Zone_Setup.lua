@@ -277,11 +277,13 @@ RandomRedPool = {
 	"AXE-TRUCK",
 	"AXE-ARMOR-LIGHT",
 	"AXE-ARMOR-TIG-PAN",
+	"AXE-ARMOR-TIG1",
 	"AXE-AAA-OPTFLAK",
 	"AXE-AAA-18-36",
 	"AXE-AAA-37-41",
 	"AXE-ARTY-FH",
 	"AXE-ARTY-SPH",
+	"AXE-ARTY-SPH2",
 }
 
 RandomBluePool = {
@@ -324,49 +326,49 @@ end
 Hunt = true
 
 zones = {
-    BigginHill = ZoneCommander:new({zone='BigginHill', side=2, size='medium', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.BigginHill, customSuspendNmBlue = 62}),
-	Odiham = ZoneCommander:new({zone='Odiham', side=2, size='medium', level=20, upgrades=upgrades.airfieldUK2, crates={}, flavorText=flavor.Odiham}),
-	Farnborough = ZoneCommander:new({zone='Farnborough', side=2, size='medium', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.Farnborough}),
-	Manston = ZoneCommander:new({zone='Manston', side=2, size='medium', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.Manston}),
+    BigginHill = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='BigginHill', side=2, size='medium', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.BigginHill}),
+	Odiham = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Odiham', side=2, size='medium', level=20, upgrades=upgrades.airfieldUK2, crates={}, flavorText=flavor.Odiham}),
+	Farnborough = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Farnborough', side=2, size='medium', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.Farnborough}),
+	Manston = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Manston', side=2, size='medium', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.Manston}),
 	Dover = ZoneCommander:new({zone='Dover', side=2, size='big', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.Dover, income=1}),
-	Hawkinge = ZoneCommander:new({zone='Hawkinge', side=2, size='small', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.Hawkinge}),
-	Lympne = ZoneCommander:new({zone='Lympne', side=2, size='small', level=20, upgrades=upgrades.airfieldUK2, crates={}, flavorText=flavor.Lympne}),
-	Chailey = ZoneCommander:new({zone='Chailey', side=2, size='small', level=20, upgrades=upgrades.airfieldUK2, crates={}, flavorText=flavor.Chailey}),
-	Ford = ZoneCommander:new({zone='Ford', side=2, size='small', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.Ford}),
-	Tangmere = ZoneCommander:new({zone='Tangmere', side=2, size='small', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.Tangmere}),
-	Funtington = ZoneCommander:new({zone='Funtington', side=2, size='small', level=20, upgrades=upgrades.airfieldUK2, crates={}, flavorText=flavor.Funtington}),
-	NeedsOarPoint = ZoneCommander:new({zone='Needs Oar Point', side=2, size='small', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.NeedsOarPoint}),
-	Friston = ZoneCommander:new({zone='Friston', side=2, size='small', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.Friston}),
-	Dunkirk = ZoneCommander:new({zone='Dunkirk', side=1, size='medium', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.Dunkirk}),
+	Hawkinge = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Hawkinge', side=2, size='small', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.Hawkinge}),
+	Lympne = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Lympne', side=2, size='small', level=20, upgrades=upgrades.airfieldUK2, crates={}, flavorText=flavor.Lympne}),
+	Chailey = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Chailey', side=2, size='small', level=20, upgrades=upgrades.airfieldUK2, crates={}, flavorText=flavor.Chailey}),
+	Ford = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Ford', side=2, size='small', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.Ford}),
+	Tangmere = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Tangmere', side=2, size='small', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.Tangmere}),
+	Funtington = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Funtington', side=2, size='small', level=20, upgrades=upgrades.airfieldUK2, crates={}, flavorText=flavor.Funtington}),
+	NeedsOarPoint = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Needs Oar Point', side=2, size='small', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.NeedsOarPoint}),
+	Friston = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Friston', side=2, size='small', level=20, upgrades=upgrades.airfieldUK1, crates={}, flavorText=flavor.Friston}),
+	Dunkirk = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Dunkirk', side=1, size='medium', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.Dunkirk}),
 	DunkirkPort = ZoneCommander:new({zone='Dunkirk-Port', side=1, size='medium', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.DunkirkPort, income=1}),
-	SaintOmer = ZoneCommander:new({zone='Saint-Omer', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.SaintOmer}),
-	Merville = ZoneCommander:new({zone='Merville', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.Merville, customSuspendNmRed = 55}),
-	Abbeville = ZoneCommander:new({zone='Abbeville', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.Abbeville}),
-	Amiens = ZoneCommander:new({zone='Amiens', side=1, size='medium', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.Amiens, customSuspendNmRed = 80}),
+	SaintOmer = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Saint-Omer', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.SaintOmer}),
+	Merville = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Merville', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.Merville}),
+	Abbeville = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Abbeville', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.Abbeville}),
+	Amiens = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Amiens', side=1, size='medium', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.Amiens}),
 	Cherbourg = ZoneCommander:new({zone='Cherbourg', side=1, size='medium', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.Cherbourg, income=1}),
 	Calais = ZoneCommander:new({zone='Calais', side=1, size='medium', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.Calais, income=1}),
-	SaintAubain = ZoneCommander:new({zone='Saint-Aubain', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.SaintAubain}),
-	Fecamp = ZoneCommander:new({zone='Fecamp', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.Fecamp}),
+	SaintAubain = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Saint-Aubain', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.SaintAubain}),
+	Fecamp = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Fecamp', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.Fecamp}),
 	LeHavre = ZoneCommander:new({zone='Le Havre', side=1, size='medium', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.LeHavre, income=1}),
-	Rouen = ZoneCommander:new({zone='Rouen', side=1, size='medium', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.Rouen, customSuspendNmRed = 80}),
-	Carpiquet = ZoneCommander:new({zone='Carpiquet', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.Carpiquet}),
+	Rouen = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Rouen', side=1, size='medium', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.Rouen}),
+	Carpiquet = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Carpiquet', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.Carpiquet}),
 	Caen = ZoneCommander:new({zone='Caen', side=1, size='medium', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.Caen, income=1}),
-	SainteCroix = ZoneCommander:new({zone='Sainte-Croix', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.SainteCroix}),
-	SaintPierre = ZoneCommander:new({zone='Saint-Pierre', side=1, size='small', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.SaintPierre}),
-	LonguesSurMer = ZoneCommander:new({zone='Longues-Sur-Mer', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.LonguesSurMer}),
-	Cricqueville = ZoneCommander:new({zone='Cricqueville', side=1, size='small', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.Cricqueville}),
-	LeMolay = ZoneCommander:new({zone='Le Molay', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.LeMolay}),
-	Brucheville = ZoneCommander:new({zone='Brucheville', side=1, size='small', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.Brucheville}),
+	SainteCroix = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Sainte-Croix', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.SainteCroix}),
+	SaintPierre = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Saint-Pierre', side=1, size='small', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.SaintPierre}),
+	LonguesSurMer = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Longues-Sur-Mer', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.LonguesSurMer, customSuspendNm = 100}),
+	Cricqueville = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Cricqueville', side=1, size='small', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.Cricqueville}),
+	LeMolay = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Le Molay', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.LeMolay, customSuspendNm = 100}),
+	Brucheville = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Brucheville', side=1, size='small', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.Brucheville}),
 	Valognes = ZoneCommander:new({zone='Valognes', side=1, size='medium', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.Valognes}),
-	Maupertus = ZoneCommander:new({zone='Maupertus', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.Maupertus}),
-	Bernay = ZoneCommander:new({zone='Bernay', side=1, size='small', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.Bernay, customSuspendNmRed = 80}),
-	SaintAndre = ZoneCommander:new({zone='Saint-Andre', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.SaintAndre}),
-	CarrierGroup = ZoneCommander:new({zone='CarrierGroup', side=2, level=20, upgrades=upgrades.CarrierUpgrades, crates={}, flavorText=flavor.CarrierGroup}),
+	Maupertus = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Maupertus', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.Maupertus}),
+	Bernay = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Bernay', side=1, size='small', level=20, upgrades=upgrades.airfieldFR2, crates={}, flavorText=flavor.Bernay}),
+	SaintAndre = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Saint-Andre', side=1, size='small', level=20, upgrades=upgrades.airfieldFR1, crates={}, flavorText=flavor.SaintAndre}),
+	CarrierGroup = ZoneCommander:new({facility='carrier', isPlaneSpawn=true, zone='CarrierGroup', side=2, level=20, upgrades=upgrades.CarrierUpgrades, crates={}, flavorText=flavor.CarrierGroup}),
 	--hiddenCarrierEssex = ZoneCommander:new({zone='HiddenCarrierEssex', side=2, level=20, upgrades=upgrades.CarrierEssexUpgrades}),
 	AxeCarrierGroup = ZoneCommander:new({zone='AxeCarrierGroup', side=1, level=20, upgrades=upgrades.AxeCarrierUpgrades, crates={}, flavorText=flavor.AxeCarrierGroup}),
 	Paris = ZoneCommander:new({zone='Paris', side=1, size='big', level=20, upgrades=upgrades.Paris, crates={}, flavorText=flavor.Paris, income=1}),
-	Orly = ZoneCommander:new({zone='Orly', side=1, size='big', level=20, upgrades=upgrades.Orly, crates={}, flavorText=flavor.Orly, income=1}),
-	London = ZoneCommander:new({zone='London', side=2, size='big', level=20, upgrades=upgrades.London, crates={}, flavorText=flavor.London, income=1,customSuspendNmBlue = 70}),
+	Orly = ZoneCommander:new({facility='airbase', isPlaneSpawn=true, zone='Orly', side=1, size='big', level=20, upgrades=upgrades.Orly, crates={}, flavorText=flavor.Orly, income=1}),
+	London = ZoneCommander:new({zone='London', side=2, size='big', level=20, upgrades=upgrades.London, crates={}, flavorText=flavor.London, income=1}),
 	PointeDesGroins = ZoneCommander:new({zone='Pointe des Groins', side=1, level=20, upgrades=upgrades.EWRPointeDesGroins, crates={}, flavorText=flavor.PointeDesGroins}),
 	PointeDuHoc = ZoneCommander:new({zone='Pointe du Hoc', side=1, level=20, upgrades=upgrades.EWRPointeDuHoc, crates={}, flavorText=flavor.PointeDuHoc}),
 	CapGrisNez = ZoneCommander:new({zone='Cap Gris-Nez', side=1, level=20, upgrades=upgrades.EWRCapGrisNez, crates={}, flavorText=flavor.CapGrisNez}),
@@ -883,12 +885,13 @@ zones.Brucheville:addGroups({
 })
 
 zones.BigginHill:addGroups({
-	GroupCommander:new({name='UK_BigginHill-resupply-London', mission='supply', template='SupplyAirTemplate', targetzone='London', type = 'surface'}),
-    GroupCommander:new({name='UK_BigginHill-resupply-Manston', mission='supply', template='SupplyAirTemplate', targetzone='Manston', type = 'surface'}),
-    GroupCommander:new({name='UK_BigginHill-resupply-Dover', mission='supply', template='SupplyAirTemplate', targetzone='Dover', type = 'surface'}),
-	GroupCommander:new({name='UK_BigginHill-resupply-Friston', mission='supply', template='SupplyAirTemplate', targetzone='Friston', type = 'surface'}),
-	GroupCommander:new({name='UK_BigginHill-resupply-Chailey', mission='supply', template='SupplyAirTemplate', targetzone='Chailey', type = 'surface'}),
-	GroupCommander:new({name='UK_BigginHill-resupply-Calais', mission='supply', template='SupplyAirTemplate', targetzone='Calais', type = 'surface', urgent = function() return zones.Calais.side == 0 end, ForceUrgent = true}),
+	GroupCommander:new({name='UK_BigginHill-resupply-London', mission='supply', template='SupplyAirTemplate', targetzone='London', type = 'surface', AllowSupplyLaunchFromSuspendedZone = true}),
+    GroupCommander:new({name='UK_BigginHill-resupply-Manston', mission='supply', template='SupplyAirTemplate', targetzone='Manston', type = 'surface', AllowSupplyLaunchFromSuspendedZone = true}),
+    GroupCommander:new({name='UK_BigginHill-resupply-Dover', mission='supply', template='SupplyAirTemplate', targetzone='Dover', type = 'surface', AllowSupplyLaunchFromSuspendedZone = true}),
+	GroupCommander:new({name='UK_BigginHill-resupply-Friston', mission='supply', template='SupplyAirTemplate', targetzone='Friston', type = 'surface', AllowSupplyLaunchFromSuspendedZone = true}),
+	GroupCommander:new({name='UK_BigginHill-resupply-Chailey', mission='supply', template='SupplyAirTemplate', targetzone='Chailey', type = 'surface', AllowSupplyLaunchFromSuspendedZone = true}),
+	GroupCommander:new({name='UK_BigginHill-resupply-Calais', mission='supply', template='SupplyAirTemplate', targetzone='Calais', type = 'surface', urgent = function() return zones.Calais.side == 0 end, ForceUrgent = true, AllowSupplyLaunchFromSuspendedZone = true}),
+	GroupCommander:new({name='UK_BigginHill-resupply-LeHavre', mission='supply', template='SupplyAirTemplate', targetzone='Le Havre', type = 'surface', urgent = function() return zones.LeHavre.side == 0 end, ForceUrgent = true, AllowSupplyLaunchFromSuspendedZone = true}),
 	GroupCommander:new({name='UK_BigginHill-attack-LeHavre', mission='attack', template='CasPlaneTemplate', MissionType='CAS', targetzone='Le Havre', Altitude = CasAltitude()}),
 	--GroupCommander:new({name='UK_BigginHill-attack-LeHavre-escort', mission='escort', targetzone='Le Havre', type = 'air'}),
 	GroupCommander:new({name='UK_BigginHill-attack-DunkirkPort', mission='attack', template='CasPlaneTemplate', MissionType='CAS', targetzone='Dunkirk-Port', Altitude = CasAltitude()}),
@@ -899,10 +902,10 @@ zones.BigginHill:addGroups({
 
 })
 zones.Farnborough:addGroups({
-    GroupCommander:new({name='UK_Farnborough-resupply-BigginHill', mission='supply', template='SupplyAirTemplate', targetzone='BigginHill', type = 'surface'}),
+    GroupCommander:new({name='UK_Farnborough-resupply-BigginHill', mission='supply', template='SupplyAirTemplate', targetzone='BigginHill', type = 'surface', AllowSupplyLaunchFromSuspendedZone = true}),
     GroupCommander:new({name='UK_Farnborough-resupply-Odiham', mission='supply', template='SupplyConvoy', targetzone='Odiham', type = 'surface'}),
-	GroupCommander:new({name='UK_Farnborough-resupply-Ford', mission='supply', template='SupplyAirTemplate', targetzone='Ford', type = 'surface', urgent = function() return zones.Ford.side == 0 end, ForceUrgent = true}),
-    GroupCommander:new({name='UK_Farnborough-resupply-NeedsOarPoint', mission='supply', template='SupplyAirTemplate', targetzone='Needs Oar Point', type = 'surface'}),
+	GroupCommander:new({name='UK_Farnborough-resupply-Ford', mission='supply', template='SupplyAirTemplate', targetzone='Ford', type = 'surface', urgent = function() return zones.Ford.side == 0 end, ForceUrgent = true, AllowSupplyLaunchFromSuspendedZone = true}),
+    GroupCommander:new({name='UK_Farnborough-resupply-NeedsOarPoint', mission='supply', template='SupplyAirTemplate', targetzone='Needs Oar Point', type = 'surface', AllowSupplyLaunchFromSuspendedZone = true}),
 	GroupCommander:new({name='UK_Farnborough-attack-Caen', mission='attack', template='CasPlaneTemplate', MissionType='CAS', targetzone='Caen', Altitude = CasAltitude()}),
 	--GroupCommander:new({name='UK_Farnborough-attack-Caen-escort', mission='escort', targetzone='Caen', type = 'air'}),
 	GroupCommander:new({name='UK_Farnborough-attack-LeMolay', mission='attack', template='RunwayStrikePlaneTemplate', MissionType='RUNWAYSTRIKE', targetzone='Le Molay', Altitude = RunwayStrikeAltitude()}),
@@ -962,7 +965,7 @@ zones.London:addGroups({
 })
 zones.Manston:addGroups({
 	GroupCommander:new({name='UK_Manston-patrol-Dover', mission='patrol', template='CapPlaneTemplate', MissionType='CAP', targetzone='Dover', Altitude = CapAltitude()}),
-    GroupCommander:new({name='UK_Manston-resupply-DunkirkPort', mission='supply', template='SupplyAirTemplate', targetzone='Dunkirk-Port', type = 'surface', urgent = function() return zones.DunkirkPort.side == 0 end, ForceUrgent = true}),
+    GroupCommander:new({name='UK_Manston-resupply-DunkirkPort', mission='supply', template='SupplyAirTemplate', targetzone='Dunkirk-Port', type = 'surface', urgent = function() return zones.DunkirkPort.side == 0 end, ForceUrgent = true, AllowSupplyLaunchFromSuspendedZone = true}),
 	GroupCommander:new({name='UK_Manston-attack-AxeCarrierGroup', mission='attack', template='AntiShipPlaneTemplate', MissionType='ANTISHIP', targetzone='AxeCarrierGroup', Altitude = CasAltitude()}),
 	--GroupCommander:new({name='UK_Manston-resupply-Hawkinge', mission='supply', targetzone='Hawkinge', type = 'surface'}),
 	--GroupCommander:new({name='UK_Manston-resupply-Lympne', mission='supply', targetzone='Lympne', type = 'surface'}),
@@ -973,16 +976,16 @@ zones.Manston:addGroups({
 zones.NeedsOarPoint:addGroups({
 	--GroupCommander:new({name='UK_NeedsOarPoint-resupply-Farnborough', mission='supply', targetzone='Farnborough', type = 'surface'}),
 	GroupCommander:new({name='UK_NeedsOarPoint-patrol-Ford', mission='patrol', template='CapPlaneTemplate', MissionType='CAP', targetzone='Ford', Altitude = CapAltitude()}),
-	GroupCommander:new({name='UK_NeedsOarPoint-resupply-Cherbourg', mission='supply', template='SupplyAirTemplate', targetzone='Cherbourg', type = 'surface', urgent = function() return zones.Cherbourg.side == 0 end, ForceUrgent = true}),
-	GroupCommander:new({name='UK_NeedsOarPoint-resupply-Maupertus', mission='supply', template='SupplyAirTemplate', targetzone='Maupertus', type = 'surface', urgent = function() return zones.Maupertus.side == 0 end, ForceUrgent = true}),
+	GroupCommander:new({name='UK_NeedsOarPoint-resupply-Cherbourg', mission='supply', template='SupplyAirTemplate', targetzone='Cherbourg', type = 'surface', urgent = function() return zones.Cherbourg.side == 0 end, ForceUrgent = true, AllowSupplyLaunchFromSuspendedZone = true}),
+	GroupCommander:new({name='UK_NeedsOarPoint-resupply-Maupertus', mission='supply', template='SupplyAirTemplate', targetzone='Maupertus', type = 'surface', urgent = function() return zones.Maupertus.side == 0 end, ForceUrgent = true, AllowSupplyLaunchFromSuspendedZone = true}),
 	GroupCommander:new({name='UK_NeedsOarPoint-attack-Cherbourg', mission='attack', template='CasPlaneTemplate', MissionType='CAS', targetzone='Cherbourg', Altitude = CasAltitude()}),
 	GroupCommander:new({name='UK_NeedsOarPoint-attack-Maupertus', mission='attack', template='RunwayStrikePlaneTemplate', MissionType='RUNWAYSTRIKE', targetzone='Maupertus', Altitude = RunwayStrikeAltitude()}),
 	GroupCommander:new({name='UK_NeedsOarPoint-attack-LeMolay', mission='attack', template='CapPlaneTemplate', MissionType='CAP', targetzone='Le Molay', Altitude = CapAltitude()}),
 	
 })
 zones.Odiham:addGroups({
-	GroupCommander:new({name='UK_Odiham-resupply-Cherbourg', mission='supply', template='SupplyAirTemplate', targetzone='Cherbourg', type = 'surface', urgent = function() return zones.Cherbourg.side == 0 end, ForceUrgent = true}),
-	GroupCommander:new({name='UK_Odiham-resupply-Caen', mission='supply', template='SupplyAirTemplate', targetzone='Caen', type = 'surface', urgent = function() return zones.Caen.side == 0 end, ForceUrgent = true}),
+	GroupCommander:new({name='UK_Odiham-resupply-Cherbourg', mission='supply', template='SupplyAirTemplate', targetzone='Cherbourg', type = 'surface', urgent = function() return zones.Cherbourg.side == 0 end, ForceUrgent = true, AllowSupplyLaunchFromSuspendedZone = true}),
+	GroupCommander:new({name='UK_Odiham-resupply-Caen', mission='supply', template='SupplyAirTemplate', targetzone='Caen', type = 'surface', urgent = function() return zones.Caen.side == 0 end, ForceUrgent = true, AllowSupplyLaunchFromSuspendedZone = true}),
 	--GroupCommander:new({name='UK_Odiham-resupply-BigginHill', mission='supply', targetzone='BigginHill', type = 'surface'}),
 	GroupCommander:new({name='UK_Odiham-attack-Caen', mission='attack', template='CasPlaneTemplate', MissionType='CAS', targetzone='Caen', Altitude = CasAltitude()}),
 	GroupCommander:new({name='UK_Odiham-attack-Carpiquet', mission='attack', template='RunwayStrikePlaneTemplate', MissionType='RUNWAYSTRIKE', targetzone='Carpiquet', Altitude = RunwayStrikeAltitude()}),
@@ -1015,7 +1018,6 @@ zones.hiddenUKNavalbasePortsmouth:addGroups({
 	GroupCommander:new({name='UK_hiddenUKNavalbasePortsmouth-resupply-CarrierGroup', mission='supply', template='SupplyNavalTemplate', targetzone='CarrierGroup', type = 'surface', urgent = function() return zones.CarrierGroup.side == 0 end, ForceUrgent = true}),
 	-- Normandy amphibious capture routes
 	GroupCommander:new({name='UK_hiddenUKNavalbasePortsmouth-capture-Cherbourg', mission='supply', template='SupplyNavalTemplate', targetzone='Cherbourg', type='surface', urgent=function() return zones.Cherbourg.side == 0 end, ForceUrgent=true}),
-	GroupCommander:new({name='UK_hiddenUKNavalbasePortsmouth-capture-Cricqueville', mission='supply', template='SupplyNavalTemplate', targetzone='Cricqueville', type='surface', urgent=function() return zones.Cricqueville.side == 0 end, ForceUrgent=true}),
 	GroupCommander:new({name='UK_hiddenUKNavalbasePortsmouth-capture-LonguesSurMer', mission='supply', template='SupplyNavalTemplate', targetzone='Longues-Sur-Mer', type='surface', urgent=function() return zones.LonguesSurMer.side == 0 end, ForceUrgent=true}),
 	GroupCommander:new({name='UK_hiddenUKNavalbasePortsmouth-capture-SaintPierre', mission='supply', template='SupplyNavalTemplate', targetzone='Saint-Pierre', type='surface', urgent=function() return zones.SaintPierre.side == 0 end, ForceUrgent=true}),
 })
@@ -1041,7 +1043,7 @@ zones.AxeCarrierGroup:addGroups({
 })
 zones.CarrierGroup:addGroups({
 	GroupCommander:new({name='UK_CarrierGroup-attack-AxeCarrierGroup', mission='attack', template='BattleshipTemplate', MissionType='BATTLESHIP', targetzone='AxeCarrierGroup', type = 'surface'}),
-	GroupCommander:new({name='UK_CarrierGroup-attack-LeHavre', mission='attack', template='BattleshipTemplate', MissionType='BATTLESHIP', targetzone='Le Havre', type = 'surface'}),
+	--GroupCommander:new({name='UK_CarrierGroup-attack-LeHavre', mission='attack', template='BattleshipTemplate', MissionType='BATTLESHIP', targetzone='Le Havre', type = 'surface'}),
 	GroupCommander:new({name='UK_CarrierGroup-attack-Cherbourg', mission='attack', template='BattleshipTemplate', MissionType='BATTLESHIP', targetzone='Cherbourg', type = 'surface'}),
 	GroupCommander:new({name='UK_CarrierGroup-attack-SainteCroix', mission='attack', template='BattleshipTemplate', MissionType='BATTLESHIP', targetzone='Sainte-Croix', type = 'surface'}),
 })
@@ -1108,41 +1110,6 @@ zones.Bernay.airbaseName = "Bernay Saint Martin"
 zones.SaintAndre.airbaseName = "Saint-Andre-de-lEure"
 zones.Orly.airbaseName = "Orly"
 zones.CarrierGroup.airbaseName = "ESSEX"
-
-zones.BigginHill.isHeloSpawn = true
-zones.Odiham.isHeloSpawn = true
-zones.Farnborough.isHeloSpawn = true
-zones.Manston.isHeloSpawn = true
-zones.Hawkinge.isHeloSpawn = true
-zones.Lympne.isHeloSpawn = true
-zones.Chailey.isHeloSpawn = true
-zones.Ford.isHeloSpawn = true
-zones.Tangmere.isHeloSpawn = true
-zones.Funtington.isHeloSpawn = true
-zones.NeedsOarPoint.isHeloSpawn = true
-zones.Friston.isHeloSpawn = true
-zones.Dunkirk.isHeloSpawn = true
-zones.SaintOmer.isHeloSpawn = true
-zones.Merville.isHeloSpawn = true
-zones.Abbeville.isHeloSpawn = true
-zones.Amiens.isHeloSpawn = true
-zones.SaintAubain.isHeloSpawn = true
-zones.Fecamp.isHeloSpawn = true
-zones.Rouen.isHeloSpawn = true
-zones.Carpiquet.isHeloSpawn = true
-zones.SainteCroix.isHeloSpawn = true
-zones.SaintPierre.isHeloSpawn = true
-zones.LonguesSurMer.isHeloSpawn = true
-zones.Cricqueville.isHeloSpawn = true
-zones.LeMolay.isHeloSpawn = true
-zones.Brucheville.isHeloSpawn = true
-zones.Maupertus.isHeloSpawn = true
-zones.Bernay.isHeloSpawn = true
-zones.SaintAndre.isHeloSpawn = true
-zones.Orly.isHeloSpawn = true
-zones.CarrierGroup.isHeloSpawn = true
-
-
 
 -----------BLUE SUPPLY CHAIN ----------------
 bc:addConnectionSupply("BigginHill","Manston")
@@ -1483,8 +1450,13 @@ for i,v in ipairs(bc:getZones()) do
 	v:registerTrigger('lost', checkMissionComplete, 'missioncompleted')
 end
 
-timer.scheduleFunction(function()
+SCHEDULER:New(nil,function()
 	checkMissionComplete(nil, nil)
+    bc:roamGroupsToLocalSubZone({
+        "AXE-TRUCK #",
+		"AXE-ARMOR-LIGHT #"
+
+	}, 30, nil, { groupMin = 10, groupMax = 45, zoneMin = 120, zoneMax = 360, cycleMin = 420, cycleMax = 720 })
 end,{},5,0)
 
 -- SCHEDULER:New(nil,function()
@@ -1545,7 +1517,7 @@ function(sender, params)
         end
         return L10N:Get("SYRIA_SHOP_CAN_ONLY_TARGET_FRIENDLY")
     elseif params.zone and params.zone.side == 2 and not params.zone.suspended then
-        if not params.zone:upgrade() then
+        if not params.zone:_addExpeditedRegularSupplyStock(1, timer.getAbsTime()) then
             return L10N:Get("SYRIA_SHOP_ZONE_NO_RESUPPLY")
         end
     else
@@ -1604,6 +1576,8 @@ local SHOP_PRICE_DEFAULTS = {
   zsam          = 1000,
   zewr          = 1000,
   zlogc         = 2000,
+  ztrainrepair  = 2000,
+  zwhrepair     = 2000,
   zsup3         = 750,
   zarm          = 1000,
   gslot         = 3000,
@@ -1625,6 +1599,7 @@ local SHOP_RANK_DEFAULTS = {
   zsam           = 6,
   zewr           = 2,
   zlogc          = 1,
+  ztrainrepair   = 1,
   zsup3          = 2,
   zarm           = 7,
   gslot          = 9,
@@ -1858,7 +1833,6 @@ bc.shopItems['dynamicbomb'].groupZoneSelector = {
 }
 
 
-if UseStatics == true then
 bc:registerShopItem('dynamicstatic', L10N:Get("CA_SHOP_ITEM_STATIC_STRUCTURE"), ShopPrices.dynamicstatic,
 function(sender)
     if StructureActive then
@@ -1867,7 +1841,7 @@ function(sender)
 	return L10N:Get("SYRIA_SHOP_CHOOSE_TARGET_ZONE")
 end,
 function(sender, params)
-    if params.zone and params.zone.side == 1 and params.zone.newStatics and next(params.zone.newStatics) then
+    if params.zone and bc.shopItems['dynamicstatic'].groupZoneSelector.allow(params.zone) then
         if StructureActive then
             return L10N:Format("SYRIA_SHOP_MISSION_STILL_PROGRESS", L10N:Get("CA_SHOP_LABEL_BUILDING_STRIKE"))
         end
@@ -1889,12 +1863,11 @@ bc.shopItems['dynamicstatic'].groupZoneSelector = {
 	sortPolicy = 'enemy_frontline',
 	allow = function(zoneObj)
 		return zoneObj.side == 1
-			and zoneObj.newStatics
-			and next(zoneObj.newStatics) ~= nil
+			and ((zoneObj.warehouseFacility and zoneObj:_getWarehouseTarget() ~= nil)
+				or (UseStatics == true and zoneObj.newStatics and next(zoneObj.newStatics) ~= nil))
 	end,
 	emptyLabel = L10N:Get("CA_SHOP_NO_VALID_BUILDING_TARGET_ZONES"),
 }
-end
 ---------------------------------------------END DYNAMIC SHOP ------------------------------------------
 
 bc:registerShopItem('intel',L10N:Get("NORMANDY_SHOP_ITEM_OPERATIONAL_INTEL"),ShopPrices.intel,function(sender)
@@ -1935,6 +1908,40 @@ local function redMassAttackAction()
 end
 
 bc:registerShopItem(RED_MASS_ATTACK_ID, L10N:Get("SYRIA_SHOP_ITEM_RED_MASS_ATTACK"), RED_MASS_ATTACK_COST, redMassAttackAction)
+
+local redWarehouseMenu = nil
+bc:registerShopItem('redwarehouse', L10N:Get("WAREHOUSE_SHOP_RED_CREATE"), 3000, function(sender)
+	if redWarehouseMenu then
+		missionCommands.removeItemForCoalition(1, redWarehouseMenu)
+		redWarehouseMenu = nil
+	end
+	local zoneChoices = {}
+	for _, zoneObj in ipairs(bc:getZones()) do
+		if zoneObj.side == 1 and zoneObj.active and not zoneObj.suspended and not zoneObj.isHidden
+			and zoneObj.airbaseName and zoneObj.airbaseName ~= '' and not zoneObj.warehouseFacility
+			and not isCarrierZoneName(zoneObj.zone) then
+			zoneChoices[zoneObj.zone] = zoneObj
+		end
+	end
+	if not next(zoneChoices) then return L10N:Get("SYRIA_SHOP_NO_ELIGIBLE_AIRBASE_ZONES") end
+	redWarehouseMenu = bc:showTargetZoneMenu(1, L10N:Get("WAREHOUSE_SHOP_RED_CREATE"), function(zoneName, menu)
+		local zoneObj = zoneChoices[zoneName]
+		bc:buyShopItem(1, 'redwarehouse', {zone = zoneObj})
+		if zoneObj.warehouseFacility then
+			missionCommands.removeItemForCoalition(1, menu)
+			redWarehouseMenu = nil
+		end
+		return true -- Keep the selector on failure; successful purchases close it above.
+	end, 1, false, zoneChoices)
+	return L10N:Get("SYRIA_SHOP_CHOOSE_ZONE")
+end, function(sender, params)
+	return bc:applyRedWarehouseUpgrade(params.zone, params.placement, params.now)
+end)
+bc:registerShopItem('redwhrepair', L10N:Get("WAREHOUSE_SHOP_REPAIR"), 2000, function(sender)
+	return L10N:Get("SYRIA_SHOP_CHOOSE_ZONE")
+end, function(sender, params)
+	return bc:applyWarehouseRepair(params.zone, 1, params.now)
+end)
 
 bc:registerShopItem('zinf',L10N:Get("SYRIA_SHOP_ITEM_UPGRADE_INFANTRY"),ShopPrices.zinf,function(sender)
 	return L10N:Get("SYRIA_SHOP_CHOOSE_ZONE")
@@ -2009,7 +2016,7 @@ function(sender,params)
 			end
 			return L10N:Get("SYRIA_SHOP_ZONE_ALREADY_UPGRADED")
 		end
-		params.zone:addExtraSlot('BluePD')
+		params.zone:addExtraSlot('bluePD')
 		bc:refreshZoneLabel(params.zone.zone)
 		if bc.globalExtraUnlock then
 			trigger.action.outTextForCoalition(2,L10N:Format("SYRIA_SHOP_UPGRADE_ADDED", L10N:Get("SYRIA_SHOP_ITEM_EARLY_WARNING_RADAR"), params.zone.zone, tostring(ShopPrices.zewr)),10)
@@ -2041,8 +2048,26 @@ bc.shopItems['zlogc'].groupZoneSelector = {
 	targetzoneside = 2,
 	includeSuspended = false,
 	sortPolicy = 'friendly_frontline',
+	refreshTags = { 'warehouse_targets', 'friendly_targets' },
 	extraPredicate = function(zoneObj)
-		return not zoneObj.LogisticCenter
+		return not zoneObj.LogisticCenter and not zoneObj.warehouseFacility and not isCarrierZoneName(zoneObj.zone)
+	end,
+	emptyLabel = L10N:Get("SYRIA_SHOP_NO_ELIGIBLE_AIRBASE_ZONES"),
+}
+
+bc:registerShopItem('zwhrepair', L10N:Get("WAREHOUSE_SHOP_REPAIR"), ShopPrices.zwhrepair, function(sender)
+	return L10N:Get("SYRIA_SHOP_CHOOSE_ZONE")
+end, function(sender, params)
+	return bc:applyWarehouseRepair(params.zone, 2, timer.getAbsTime())
+end)
+bc.shopItems['zwhrepair'].groupZoneSelector = {
+	targetzoneside = 2,
+	includeSuspended = true,
+	sortPolicy = 'friendly_frontline',
+	candidateBucket = 'blue_visible',
+	refreshTags = { 'warehouse_targets' },
+	extraPredicate = function(zoneObj)
+		return zoneObj.warehouseFacility ~= nil and zoneObj.warehouseFacility.state == 'destroyed'
 	end,
 	emptyLabel = L10N:Get("SYRIA_SHOP_NO_ELIGIBLE_AIRBASE_ZONES"),
 }
@@ -2166,6 +2191,7 @@ ShopPrices = ShopPrices or {
 	zsam          = 1000, -- Upgrade zone with AA guns
 	zewr          = 1000, -- Upgrade zone with Early Warning Radar
 	zlogc         = 2000, -- Upgrade zone to logistic center
+	zwhrepair     = 2000, -- Repair the destroyed warehouse building
 	zsup3         = 750,  -- Add 3 supplies to a zone
 	zarm          = 1000, -- Upgrade zone with armor
 	gslot         = 3000, -- Unlock extra upgrade slot
@@ -2196,6 +2222,8 @@ ShopRankRequirements = ShopRankRequirements or {
 
 bc:addShopItem(1, 'redzoneupgrade', -1, 1) -- red AI zone upgrade
 bc:addShopItem(1, 'redmassattack', -1, 2) -- red AI mass airbase attack
+bc:addShopItem(1, 'redwarehouse', -1, 3) -- red AI rear supply depot
+bc:addShopItem(1, 'redwhrepair', -1, 4) -- red AI warehouse repair
 
 ShopCategoryLabels = ShopCategoryLabels or {}
 local ShopCats = ShopCategoryLabels
@@ -2222,9 +2250,7 @@ ShopCats.Order = ShopCats.Order or {
 bc:addShopItem(2, 'dynamiccap', -1, 1, ShopRankRequirements.dynamiccap, ShopCats.AIAttack) -- CAP Flight
 bc:addShopItem(2, 'dynamiccas', -1, 2, ShopRankRequirements.dynamiccas, ShopCats.AIAttack) -- CAS Flight
 bc:addShopItem(2, 'dynamicbomb', -1, 3, ShopRankRequirements.dynamicbomb, ShopCats.AIAttack) -- Bomber Flight
-if UseStatics == true then
-    bc:addShopItem(2, 'dynamicstatic', -1, 6, ShopRankRequirements.dynamicstatic, ShopCats.AIAttack) -- Static structure Flight
-end
+bc:addShopItem(2, 'dynamicstatic', -1, 6, ShopRankRequirements.dynamicstatic, ShopCats.AIAttack) -- Static structure Flight
 
 -- Zone Upgrades
 bc:addShopItem(2, 'zinf', -1, 1, ShopRankRequirements.zinf, ShopCats.ZoneUpgrades) -- add infantry to a zone
@@ -2247,6 +2273,7 @@ if AllowScriptedSupplies then
     bc:addShopItem(2, 'supplies', -1, 4, ShopRankRequirements.supplies, ShopCats.LogisticsStrategic) -- fully upgrade friendly zone
 end
 bc:addShopItem(2, 'zlogc', -1, 5, ShopRankRequirements.zlogc, ShopCats.LogisticsStrategic) -- upgrade zone to logistic center
+bc:addShopItem(2, 'zwhrepair', -1, 5.5, ShopRankRequirements.zlogc, ShopCats.LogisticsStrategic) -- repair warehouse
 bc:addShopItem(2, 'zsup3', -1, 6, ShopRankRequirements.zsup3, ShopCats.LogisticsStrategic) -- add 3 supplies to a zone
 
 supplyZones = {
@@ -2296,6 +2323,8 @@ supplyZones = {
 
 lc = LogisticCommander:new({battleCommander = bc, supplyZones = supplyZones})
 bc:initCasMissions()
+bc:initDeadMissions()
+bc:initReconMissions()
 lc:init()
 
 bc:loadFromDisk()
@@ -2308,7 +2337,10 @@ else
 end
 
 bc:init()
-RewardContribution = RewardContribution or {infantry = 10, ground = 10, sam = 30, airplane = 50, ship = 200, helicopter=50, crate=100, rescue = 300, ['Zone upgrade'] = 100, ['Zone capture'] = 200, structure = 100}
+RewardContribution = RewardContribution or {infantry = 10, ground = 10, sam = 30, airplane = 50, ship = 200, helicopter=50, crate=100, rescue = 300, enemyPilotCapture = 200, ['Zone upgrade'] = 100, ['Zone capture'] = 200, structure = 100}
+RewardContribution.ctldGround = RewardContribution.ctldGround or 10
+RewardContribution.ctldAir = RewardContribution.ctldAir or 20
+RewardContribution.enemyPilotCapture = RewardContribution.enemyPilotCapture or 200
 bc:startRewardPlayerContribution(15,RewardContribution)
 HercCargoDropSupply.init(bc)
 bc:buildZoneDistanceCache()
@@ -2341,8 +2373,8 @@ zones.Manston.LogisticCenter = true
 zones.Chailey.LogisticCenter = true
 zones.NeedsOarPoint.LogisticCenter = true
 
-GlobalSettings.autoSuspendNmBlue = 90   		-- suspend blue zones deeper than this nm
-GlobalSettings.autoSuspendNmRed = 90   		-- suspend red zones deeper than this nm
+GlobalSettings.autoSuspendNmBlue = 120   		-- suspend blue zones deeper than this nm
+GlobalSettings.autoSuspendNmRed = 120   		-- suspend red zones deeper than this nm
 
 evc = EventCommander:new({ decissionFrequency=10*60, decissionVariance=10*60, skipChance = 10})
 mc = MissionCommander:new({side = 2, battleCommander = bc, checkFrequency = 60, autoArtyStartMessageKey = "NORMANDY_MISSION_ARTY_START"})
@@ -2423,62 +2455,115 @@ local function isBomberSpawnAirbaseFarFromTarget(airbase, targetZone)
 end
 
 
+local function collectNormandyBomberCandidates(side, options)
+  local zones, origins, targets = bc:getZones(), {}, {}
+  local playerPoints = side == 1 and DynamicBomber.PlayerPoints(nil) or nil
+  for _, zone in ipairs(zones) do
+    if zone.active and not zone.isHidden and not zone.zone:lower():find("hidden") then
+      if zone.side == side and (not zone.suspended or zone._idleSuspended) then
+        local airbase = getBomberSpawnAirbase(zone, side)
+        if airbase then
+          local spawnCoord = airbase:GetCoordinate()
+          local playerDistance = side == 1 and DynamicBomber.NearestPlayerDistanceNm(spawnCoord, nil, playerPoints) or nil
+          if side == 2 or ((not playerDistance or playerDistance >= WW2_BOMBER_MIN_PLAYER_SPAWN_NM) and not isRedReactivePressuredZone(zone)) then
+            origins[#origins+1] = {zone=zone, airbase=airbase, coord=spawnCoord}
+          end
+        end
+      elseif zone.side == 3 - side and (not zone.suspended or zone._idleSuspended) then
+        targets[#targets+1] = zone
+      end
+    end
+  end
+  if side == 1 and options and options.avoidSpawnZoneName then
+    local preferred = {}
+    for _, origin in ipairs(origins) do
+      if origin.zone.zone ~= options.avoidSpawnZoneName then preferred[#preferred+1] = origin end
+    end
+    if #preferred > 0 then origins = preferred end
+  end
+  local candidates = {}
+  for _, target in ipairs(targets) do
+    local targetCoord = ZONE:FindByName(target.zone):GetCoordinate()
+    local spawns = origins
+    if side == 2 then
+      spawns = {}
+      for _, origin in ipairs(origins) do
+        if UTILS.MetersToNM(origin.coord:Get2DDistance(targetCoord)) >= WW2_BOMBER_MIN_TARGET_SPAWN_NM then
+          spawns[#spawns+1] = origin
+        end
+      end
+    end
+    if #spawns > 0 then candidates[#candidates+1] = {target=target, coord=targetCoord, spawns=spawns} end
+  end
+  return candidates
+end
+
 Group.getByName(bomberRedTemplate):destroy()
 Group.getByName(bomberRedEscortTemplate):destroy()
 Group.getByName(bomberBlueTemplate):destroy()
 Group.getByName(bomberBlueEscortTemplate):destroy()
 
--- Updated bomber event to use spawnBomberStrikerAt with dynamic zone selection
-evc:addEvent({
-id='bombRed',
-action=function()
-  -- Spawn bombers from a red zone to attack a blue zone
-  -- Select random red spawn zone and random blue target zone
-  local redZones = {}
-  local blueZones = {}
-  
-  for _, zone in ipairs(bc:getZones()) do
-    local airbase = getBomberSpawnAirbase(zone, 1)
-    if zone.side == 1 and zone.active and not zone.suspended and not zone.zone:lower():find("hidden") and airbase and isBomberSpawnAirbaseFarFromCachedPlayers(airbase) and not isRedReactivePressuredZone(zone) then
-      table.insert(redZones, zone.zone)
-    elseif zone.side == 2 and zone.active and not zone.suspended and not zone.zone:lower():find("hidden") then
-      table.insert(blueZones, zone.zone)
-    end
+-- Red launches are owned by the Director; the intercept tracker remains unchanged.
+local normandyRedBomberEvent = {
+  id='bombRed',
+  idleAttackIsActive=function()
+    return bomberRedEscortGroup and bomberRedEscortGroup:isExist() and bomberRedEscortGroup:getSize() > 0 or false
+  end,
+}
+redDirector.normandyBomberEvent = normandyRedBomberEvent
+local function observeNormandyBomberOwner(owner, now)
+  if not owner then return 0 end
+  local group = owner.nativeGroup
+  if group and group:isExist() and group:getSize() > 0 then return 1 end
+  if owner._directorBattlefieldSortieKey then
+    -- Disappearance alone is not a proven combat loss or safe landing.
+    redDirector:_queueBattlefieldSortieCompletion(owner, 'aborted', now)
   end
-  
-  if #redZones > 0 and #blueZones > 0 then
-    local spawnZone = redZones[math.random(#redZones)]
-    local targetZone = blueZones[math.random(#blueZones)]
-    
-    -- Store zones for mission display
-    bomberMissionSpawnZone = spawnZone
-    bomberMissionTargetZone = targetZone
-    
-    if spawnBomberStrikerAt(spawnZone, targetZone) then
+  owner.nativeGroup = nil
+  return 0
+end
+redDirector.normandyBomberPresence = function(now)
+  local owner = normandyRedBomberEvent.nativeAttackOwner
+  return observeNormandyBomberOwner(owner, now) + observeNormandyBomberOwner(owner and owner.escortOwner, now)
+end
+redDirector.normandyBomberOptions = {
+  reuseSelection=true,
+  collectTargetCandidates=function(side, targetSide, options) return collectNormandyBomberCandidates(side, options) end,
+  pickSpawnForTarget=function(entry)
+    local origin = entry.spawns[math.random(#entry.spawns)]
+    return {targetZone=entry.target, targetCoord=entry.coord, spawnZone=origin.zone, airbase=origin.airbase, spawnCoord=origin.coord}
+  end,
+}
+redDirector.normandyBomberLauncher = function(selection)
+  if timer.getTime()-lastbomb_COOLDOWN < bomb_COOLDOWN then return false end
+  local owner = {side=1, zoneCommander=selection.spawnZone}
+  local acceptedAt = timer.getTime()
+  selection.idleAttackOwner = owner
+  return mc:launchIdleAttack(normandyRedBomberEvent, owner, selection.targetZone, function()
+    -- A deferred wake must not launch an obsolete Director operation.
+    if redDirector:_tacticalAirstrikeOperationSignature() ~= selection.operationSignature
+      or not redDirector.config.enabled or not redDirector.ready or not selection.spawnZone.active or selection.spawnZone.side ~= 1
+      or (selection.spawnZone.suspended and not selection.spawnZone._idleSuspended) then return false end
+    if timer.getTime() ~= acceptedAt then
+      local distance = DynamicBomber.NearestPlayerDistanceNm(selection.spawnCoord, nil, DynamicBomber.PlayerPoints(nil))
+      if selection.airbase:GetCoalition() ~= 1 or isRedReactivePressuredZone(selection.spawnZone)
+        or (distance and distance < WW2_BOMBER_MIN_PLAYER_SPAWN_NM) then return false end
+    end
+    bomberMissionSpawnZone = selection.spawnZone.zone
+    bomberMissionTargetZone = selection.targetZone.zone
+    normandyRedBomberEvent.nativeAttackOwner = owner
+    redDirector.normandyBomberSelection = selection
+    local launched = spawnBomberStrikerAt(bomberMissionSpawnZone, bomberMissionTargetZone)
+    redDirector.normandyBomberSelection = nil
+    if launched then
+      redDirector:commitTacticalAirstrikeLaunch(selection, bomb_COOLDOWN)
       RegisterGroupTarget(bomberRedTemplate,500,L10N:Get("NORMANDY_MISSION_INTERCEPT_BOMBERS_TITLE"),'bombRed')
     else
-      bomberMissionSpawnZone = nil
-      bomberMissionTargetZone = nil
+      bomberMissionSpawnZone, bomberMissionTargetZone = nil, nil
     end
-  end
-end,
-canExecute=function()
-  if ActiveMission['bombRed'] then return false end  -- Defense-in-depth: check ActiveMission first
-  if timer.getTime()-lastbomb_COOLDOWN < bomb_COOLDOWN then return false end
-  
-  local hasRedSpawn = false
-  local hasBlueTarget = false
-  for _, zone in ipairs(bc:getZones()) do
-    local airbase = getBomberSpawnAirbase(zone, 1)
-    if zone.side == 1 and zone.active and not zone.suspended and not zone.zone:lower():find("hidden") and airbase and isBomberSpawnAirbaseFarFromCachedPlayers(airbase) and not isRedReactivePressuredZone(zone) then
-      hasRedSpawn = true
-    elseif zone.side == 2 and zone.active and not zone.suspended and not zone.zone:lower():find("hidden") then
-      hasBlueTarget = true
-    end
-  end
-  return hasRedSpawn and hasBlueTarget
+    return launched
+  end)
 end
-})
 
 -- Track bomber mission spawn and target zones
 bomberMissionSpawnZone = nil
@@ -2486,6 +2571,7 @@ bomberMissionTargetZone = nil
 
 mc:trackMission({
 title = L10N:Get("NORMANDY_MISSION_INTERCEPT_BOMBERS_TITLE"),
+idleAttackEvent = normandyRedBomberEvent,
 description = function()
     local desc = L10N:Get("NORMANDY_MISSION_INTERCEPT_BOMBERS_DESC")
     if bomberMissionSpawnZone and bomberMissionTargetZone then
@@ -2502,19 +2588,22 @@ messageStart = function()
 end,
 messageEnd=function() 
     lastbomb_COOLDOWN=timer.getTime()
+    redDirector:onTacticalAirstrikeEnded(bomb_COOLDOWN)
     bomberMissionSpawnZone = nil
     bomberMissionTargetZone = nil
     return L10N:Get("NORMANDY_MISSION_INTERCEPT_BOMBERS_END") 
 end,
 startAction = function()
          if not missionCompleted and trigger.misc.getUserFlag(180) == 0 then
-            trigger.action.outSoundForCoalition(2, "ding.ogg")
+            -- trigger.action.outSoundForCoalition(2, "ding.ogg")
+            trigger.action.outSoundForCoalition(2, "Enemy airstrike detected intercept them before they reach their target..ogg")
         end
     end,
     endAction = function()
          if not missionCompleted and trigger.misc.getUserFlag(180) == 0 then
             trigger.action.outSoundForCoalition(2, "cancel.ogg")
         end
+        bc:cancelGroupTargetMission('bombRed', 2)
     end,
 isActive = function()
     if not ActiveMission['bombRed'] then return false end
@@ -2530,59 +2619,43 @@ end
 local bombBlue_COOLDOWN = 2400
 local lastbombBlue_COOLDOWN = -bombBlue_COOLDOWN
 
--- Blue bomber event to use spawnBlueBomberStrikerAt with dynamic zone selection
-evc:addEvent({
+-- The event keeps its own timing; the Blue Director advises only its target.
+local normandyBlueBomberEvent = {
 id='bombBlue',
-action=function()
-  -- Spawn blue bombers from a blue zone to attack a red zone
-  -- Select random blue spawn / red target pair at least 40 NM apart
-  local validPairs = {}
-  
-  for _, spawnZone in ipairs(bc:getZones()) do
-    local spawnAirbase = getBomberSpawnAirbase(spawnZone, 2)
-    if spawnZone.side == 2 and spawnZone.active and not spawnZone.suspended and not spawnZone.zone:lower():find("hidden") and spawnAirbase then
-      for _, targetZone in ipairs(bc:getZones()) do
-        if targetZone.side == 1 and targetZone.active and not targetZone.suspended and not targetZone.zone:lower():find("hidden") and isBomberSpawnAirbaseFarFromTarget(spawnAirbase, targetZone) then
-          validPairs[#validPairs + 1] = { spawn = spawnZone.zone, target = targetZone.zone }
-        end
-      end
-    end
+action=function(event)
+  local selection = blueDirector:selectNormandyBomberTarget(collectNormandyBomberCandidates(2), timer.getAbsTime())
+  if not selection then return end
+  local owner = {side=2, zoneCommander=selection.spawnZone}
+  owner.idleAttackIsActive = function()
+    return owner.nativeGroup and owner.nativeGroup:isExist() and owner.nativeGroup:getSize() > 0
+      or owner.nativeEscort and owner.nativeEscort:isExist() and owner.nativeEscort:getSize() > 0 or false
   end
-  
-  if #validPairs > 0 then
-    local selectedPair = validPairs[math.random(#validPairs)]
-    local spawnZone = selectedPair.spawn
-    local targetZone = selectedPair.target
-    
-    -- Store zones for mission display
-    bomberBlueMissionSpawnZone = spawnZone
-    bomberBlueMissionTargetZone = targetZone
-    
-    if spawnBlueBomberStrikerAt(spawnZone, targetZone) then
-      ActiveMission['bombBlue'] = true  -- Mark mission as active
+  local acceptedAt = timer.getTime()
+  selection.idleAttackOwner = owner
+  mc:launchIdleAttack(event, owner, selection.targetZone, function()
+    if not selection.spawnZone.active or selection.spawnZone.side ~= 2 or (selection.spawnZone.suspended and not selection.spawnZone._idleSuspended)
+      or (timer.getTime() ~= acceptedAt and selection.airbase:GetCoalition() ~= 2) then return false end
+    bomberBlueMissionSpawnZone = selection.spawnZone.zone
+    bomberBlueMissionTargetZone = selection.targetZone.zone
+    blueDirector.normandyBomberSelection = selection
+    local launched = spawnBlueBomberStrikerAt(bomberBlueMissionSpawnZone, bomberBlueMissionTargetZone)
+    blueDirector.normandyBomberSelection = nil
+    if launched then
+      ActiveMission['bombBlue'] = true
     else
-      bomberBlueMissionSpawnZone = nil
-      bomberBlueMissionTargetZone = nil
+      bomberBlueMissionSpawnZone, bomberBlueMissionTargetZone = nil, nil
     end
-  end
+    return launched
+  end)
 end,
-canExecute=function()
+canExecute=function(event)
+  if event._idleAttackPendingLaunch then return false end
   if ActiveMission['bombBlue'] then return false end  -- Defense-in-depth: check ActiveMission first
   if timer.getTime()-lastbombBlue_COOLDOWN < bombBlue_COOLDOWN then return false end
-  
-  for _, spawnZone in ipairs(bc:getZones()) do
-    local spawnAirbase = getBomberSpawnAirbase(spawnZone, 2)
-    if spawnZone.side == 2 and spawnZone.active and not spawnZone.suspended and not spawnZone.zone:lower():find("hidden") and spawnAirbase then
-      for _, targetZone in ipairs(bc:getZones()) do
-        if targetZone.side == 1 and targetZone.active and not targetZone.suspended and not targetZone.zone:lower():find("hidden") and isBomberSpawnAirbaseFarFromTarget(spawnAirbase, targetZone) then
-          return true
-        end
-      end
-    end
-  end
-  return false
+  return true
 end
-})
+}
+evc:addEvent(normandyBlueBomberEvent)
 
 -- Track blue bomber mission spawn and target zones
 bomberBlueMissionSpawnZone = nil
@@ -2590,6 +2663,7 @@ bomberBlueMissionTargetZone = nil
 
 mc:trackMission({
 title = L10N:Get("NORMANDY_MISSION_BOMBER_STRIKE_TITLE"),
+idleAttackEvent = normandyBlueBomberEvent,
 description = function()
     local desc = L10N:Get("NORMANDY_MISSION_BOMBER_STRIKE_DESC")
     if bomberBlueMissionSpawnZone and bomberBlueMissionTargetZone then
@@ -2638,27 +2712,31 @@ end
 local navyArty_COOLDOWN = 2400
 local lastNavyArty_COOLDOWN = -navyArty_COOLDOWN
 -- Navy Artillery event
-evc:addEvent({
+local normandyNavyArtyEvent = {
 id='navyArty',
 action=function()
   -- Spawn Navy Artillery at CarrierGroup to target Saint-Pierre
   spawnNavyArtyAt("NavyStrike", "Saint-Pierre", "Carpiquet")
-  ActiveMission['navyArty'] = true  -- Mark mission as active
 end,
-canExecute=function()
+canExecute=function(event)
+  if event._idleAttackPendingLaunch then return false end
   if ActiveMission['navyArty'] then return false end  -- Defense-in-depth: check ActiveMission first
   if timer.getTime()-lastNavyArty_COOLDOWN < navyArty_COOLDOWN then return false end
   if navyArtyActive then return false end
   local trg = {'Saint-Pierre'}
   for _,v in ipairs(trg) do
-    if bc:getZoneByName(v).side == 1 then return true end
+    local target = bc:getZoneByName(v)
+    if target.side == 1 and (not target.suspended or target._idleSuspended) then return true end
   end
   return false
 end
-})
+}
+evc:addEvent(normandyNavyArtyEvent)
+mc.normandyNavyArtyEvent = normandyNavyArtyEvent
 
 mc:trackMission({
 title = L10N:Get("NORMANDY_MISSION_NAVAL_ARTY_TITLE"),
+idleAttackEvent = normandyNavyArtyEvent,
 description = L10N:Get("NORMANDY_MISSION_NAVAL_ARTY_DESC"),
 messageStart = L10N:Get("NORMANDY_MISSION_NAVAL_ARTY_START"),
 messageEnd=function() lastNavyArty_COOLDOWN=timer.getTime() return L10N:Get("NORMANDY_MISSION_NAVAL_ARTY_END") end,
@@ -2695,7 +2773,7 @@ local function isAnyV1Active()
 end
 
 -- V1 Artillery event - Now uses random site selection
-evc:addEvent({
+local normandyV1ArtyEvent = {
     id='v1Arty',
     action=function()
         -- Use the random V1 launcher function
@@ -2703,7 +2781,8 @@ evc:addEvent({
             ActiveMission['v1Arty'] = true  -- Mark mission as active
         end
     end,
-    canExecute=function()
+    canExecute=function(event)
+        if event._idleAttackPendingLaunch then return false end
         if ActiveMission['v1Arty'] then return false end  -- Defense-in-depth: check ActiveMission first
         if timer.getTime() - lastV1Arty_COOLDOWN < v1Arty_COOLDOWN then return false end
         if isAnyV1Active() then return false end
@@ -2714,7 +2793,7 @@ evc:addEvent({
             if siteZone and siteZone.active then
                 for _, zoneName in ipairs(targetZones) do
                     local zone = bc:getZoneByName(zoneName)
-                    if zone and zone.side == 2 then
+                    if zone and zone.side == 2 and (not zone.suspended or zone._idleSuspended) then
                         return true
                     end
                 end
@@ -2722,9 +2801,12 @@ evc:addEvent({
         end
         return false
     end
-})
+}
+mc.normandyV1ArtyEvent = normandyV1ArtyEvent
+evc:addEvent(normandyV1ArtyEvent)
 
 mc:trackMission({
+    idleAttackEvent = normandyV1ArtyEvent,
     title = L10N:Get("NORMANDY_MISSION_V1_TITLE"),
     description = L10N:Get("NORMANDY_MISSION_V1_DESC"),
     messageStart = L10N:Get("NORMANDY_MISSION_V1_START"),
@@ -2889,6 +2971,14 @@ RAILWAY_STATION_GROUPS = {
 
 if bc:isNormandyTheatre() then
 	bc:registerRailwayStationGroups(RAILWAY_STATION_GROUPS)
+	bc:registerShopItem('ztrainrepair', L10N:Get("TRAIN_REPAIR_SHOP_ITEM"), ShopPrices.ztrainrepair, function(sender)
+		return L10N:Get("TRAIN_REPAIR_CHOOSE_ROUTE")
+	end, function(sender, params)
+		return bc:applyTrainRepair(params.route)
+	end)
+	bc.shopItems.ztrainrepair.groupZoneSelector = { choices = {}, refreshTags = { 'train_routes' } }
+	bc.shopItems.ztrainrepair.repairShop = { prio = 5.6, reqRank = ShopRankRequirements.ztrainrepair, category = ShopCats.LogisticsStrategic }
+	bc:refreshTrainRepairShop()
 end
 
 -- Track which stations have been destroyed to avoid duplicate processing
@@ -3081,6 +3171,9 @@ local function restoreRailwayDestructionState()
             stationsRestored = stationsRestored + 1
             
             restoreRailwayLog("restoreRailwayDestructionState: Completed restoration for " .. stationName)
+        elseif isDestroyed == false and RAILWAY_STATION_GROUPS[stationName] then
+            -- Fresh mission scenery can be destroyed again after a purchased operational repair.
+            CustomFlags[stationName] = nil
         end
     end
     
@@ -3142,6 +3235,36 @@ local function restoreTrainGroupDestructionState()
     restoreTrainLog("restoreTrainGroupDestructionState: Processed " .. trainsProcessed .. " train flags, destroyed " .. trainsDestroyed .. " active trains")
 end
 
+local delayedTrainActivation = {
+    ["UK_Train_London-resupply-Hawkinge"] = true,
+    ["AXE_Train_Paris-resupply-Fecamp"] = true,
+}
+
+local function activateLivingTrainGroups(delayedOnly)
+    local seen = {}
+    for _, groupNames in pairs(RAILWAY_STATION_GROUPS) do
+        for _, groupName in ipairs(groupNames) do
+            local delayed = delayedTrainActivation[groupName] == true
+            if not seen[groupName] and delayed == delayedOnly then
+                seen[groupName] = true
+                if CustomFlags[groupName] ~= true then
+                    local route = bc.trainSupplyRoutesByGroup[groupName]
+                    if not route.repairGeneration then
+                        local originSide = route.fromZone.side
+                        if originSide == 0 or originSide == _DATABASE.Templates.Groups[groupName].CoalitionID then
+                            GROUP:FindByName(groupName):Activate()
+                            route.repairGeneration = 1
+                        else
+                            bc:_spawnRepairedTrain(route)
+                        end
+                    end
+                end
+            end
+        end
+    end
+    bc:drawSupplyArrowsDebounced()
+end
+
 local function restoreV1GroupDestructionState()
     env.info("V1 Group System: Checking for previously destroyed V1 launchers...")
     
@@ -3184,6 +3307,10 @@ if bc:isNormandyTheatre() then
 		interval = 120,
 		notifyRestored = true,
 	})
+	activateLivingTrainGroups(false)
+	timer.scheduleFunction(function()
+		activateLivingTrainGroups(true)
+	end, {}, timer.getTime() + 600)
 end
 restoreV1GroupDestructionState()
 
@@ -3332,7 +3459,7 @@ SCHEDULER:New(nil, function()
         end
         
         -- Check if this railway station was just destroyed (not already flagged)
-        if allBelow50 and not CustomFlags[name] then
+        if allBelow50 and CustomFlags[name] == nil then
             env.info("Real-time Railway Monitoring: " .. name .. " just destroyed! Destroying dependent trains...")
             CustomFlags[name] = true
             
@@ -3388,27 +3515,10 @@ mc:trackMission({
         if capWinner then
             local reward = capTargetPlanes * 100
             local pname  = capWinner
-            bc:addContribution(pname, 2, reward)
-            local jp = bc.jointPairs and bc.jointPairs[pname]
-            if jp and bc:_jointPartnerAlive(pname) and bc:_jointPartnerAlive(jp) and bc.playerContributions[2][jp] ~= nil then
-                bc:addContribution(jp, 2, reward)
-                bc:addTempStat(jp,'CAP mission (Joint mission)',1)
-                bc:addTempStat(pname,'CAP mission (Joint mission)',1)
+            local jp = bc:awardJointMissionReward(pname, 2, reward, 'CAP mission')
+            if jp then
                 trigger.action.outTextForCoalition(2,L10N:Format("MISSION_CAP_COMPLETED_JOINT", pname, jp, reward),20)
-                local jgn = bc.groupNameByPlayer[jp]
-                local jgr = Group.getByName(jgn)
-                if jgr then
-                    local ju = jgr:getUnit(1)
-                    if ju and not Utils.isInAir(ju) then
-                        SCHEDULER:New(nil,function()
-                            if ju and ju:isExist() then
-                                world.onEvent({id=world.event.S_EVENT_LAND,time=timer.getAbsTime(),initiator=ju,initiatorPilotName=jp,initiator_unit_type=ju:getTypeName(),initiator_coalition=ju:getCoalition(),skipRewardMsg=true})
-                            end
-                        end,{},5,0)
-                    end
-                end
             else
-                bc:addTempStat(pname,'CAP mission',1)
                 trigger.action.outTextForCoalition(2,L10N:Format("MISSION_CAP_COMPLETED_SOLO", pname, reward),20)
             end
             capMissionCooldownUntil = timer.getTime() + 900
@@ -3434,20 +3544,6 @@ mc:trackMission({
 
 ---------------------------------------------------------------------
 --                          CAS MISSION                            --
-function ScheduleCasRewardClaimIfLanded(playerName)
-	local groupName = bc.groupNameByPlayer[playerName]
-	local group = groupName and Group.getByName(groupName) or nil
-	if not group then return end
-	local unit = group:getUnit(1)
-	if unit and not Utils.isInAir(unit) then
-		SCHEDULER:New(nil,function()
-			if unit and unit:isExist() then
-				world.onEvent({id=world.event.S_EVENT_LAND,time=timer.getAbsTime(),initiator=unit,initiatorPilotName=playerName,initiator_unit_type=unit:getTypeName(),initiator_coalition=unit:getCoalition(),skipRewardMsg=true})
-			end
-		end,{},5,0)
-	end
-end
-
 function RegisterDirectorCasMission(slotIndex)
 	mc:trackMission({
 		title = function(T)
@@ -3471,7 +3567,7 @@ function RegisterDirectorCasMission(slotIndex)
 			local slot = bc.casMissions.slots[slotIndex]
 			return LT(T):Format("MISSION_CAS_START", slot.targetZone, slot.targetKills)
 		end,
-		messageEnd = '',
+		messageEnd = function() return L10N:Get("MISSION_CAS_END") end,
 		startAction = function()
 			local slot = bc.casMissions.slots[slotIndex]
 			slot.started = true
@@ -3485,7 +3581,7 @@ function RegisterDirectorCasMission(slotIndex)
 					local reward = rewards[playerName]
 					bc:addContribution(playerName, 2, reward, {playerName})
 					bc:addTempStat(playerName,'CAS mission',1)
-					ScheduleCasRewardClaimIfLanded(playerName)
+					bc:scheduleRewardClaimIfLanded(playerName)
 				end
 				if #participantNames == 0 then
 					trigger.action.outTextForCoalition(2,L10N:Get("MISSION_CAS_COMPLETED_NO_REWARD"),20)
@@ -3782,6 +3878,8 @@ end,
 
 attackTarget1 = nil
 attackTarget2 = nil
+attackTarget3 = nil
+attackTarget3Started = nil
 resupplyTarget1 = nil
 resupplyTarget2 = nil
 attackCombinedStart1 = nil
@@ -3791,7 +3889,6 @@ resupplyCombinedStart1 = nil
 resupplyCombinedStart2 = nil
 resupplySuppressStart2 = nil
 local normandyOpeningAttackSlots = { false, false }
-local normandyRetireOpeningAttack2 = false
 
 local normandyOpeningFronts = {
 	{
@@ -3871,6 +3968,14 @@ local function _isNormandyOpeningPhase()
 	return normandyOpeningPhaseCache.active
 end
 
+bc.normandyAttackMissionState = {
+	openingSlots = normandyOpeningAttackSlots,
+	openingFronts = normandyOpeningFronts,
+	openingFrontByZone = normandyOpeningFrontByZone,
+	isOpeningPhase = _isNormandyOpeningPhase,
+	retireOpeningAttack2 = false,
+}
+
 bc.normandyOpeningCasZoneEvaluator = function(zoneName)
 	if not _isNormandyOpeningPhase() then return false, false end
 	local front = normandyOpeningFrontByZone[attackTarget1 or attackTarget2]
@@ -3884,44 +3989,11 @@ bc.normandyOpeningRunwayZoneEvaluator = function(zoneName)
 		and normandyOpeningFrontByZone[zoneName] == front
 end
 
-local function _isFrontlineConnectionEligible(from, to)
-	return from and to and from.side ~= to.side and from.side ~= 0 and to.side ~= 0 and
-		((not to.suspended) or from.suspended)
-end
-
-local function _isValidAttackMissionZone(zone)
-	if not zone or not zone.zone then return false end
-	local lname = zone.zone:lower()
-	return zone.side == 1 and zone.active and not zone.suspended and not zone.isHidden and
-		not isZoneUnderSEADMission(zone.zone) and
-		not lname:find('hidden') and not lname:find('sam') and not lname:find('defence')
-end
 
 
-local function _getAttackAnchorZones()
-	local anchors = {}
-	local seen = {}
-	for _, zoneName in ipairs({ attackTarget1, attackTarget2 }) do
-		if zoneName and not seen[zoneName] then
-			local targetzn = bc:getZoneByName(zoneName)
-			if targetzn and targetzn.zone and targetzn.side == 1 then
-				seen[zoneName] = true
-				anchors[#anchors + 1] = targetzn.zone
-			end
-		end
-	end
-	return anchors
-end
-local function _minDistanceToAttackAnchors(anchors, zoneName)
-	local minDist = nil
-	for _, anchorZone in ipairs(anchors or {}) do
-		local dist = ZONE_DISTANCES[anchorZone] and ZONE_DISTANCES[anchorZone][zoneName]
-		if dist and (not minDist or dist < minDist) then
-			minDist = dist
-		end
-	end
-	return minDist
-end
+
+
+
 
 mc:trackMission({
 	title = function()
@@ -3962,10 +4034,15 @@ mc:trackMission({
 			trigger.action.outSoundForCoalition(2, "cancel.ogg")
 		end
 	end,
-	isActive = function()
+	isActive = function(mission)
 		if not resupplyTarget1 then return false end
 		local targetzn = bc:getZoneByName(resupplyTarget1)
-		return targetzn and targetzn.side == 2 and targetzn:canRecieveSupply()
+		local active = targetzn and bc:_playerSupplyTargetNeedsSupply(targetzn, {})
+		if not active and not mission.isRunning then
+			resupplyTarget1 = nil
+			resupplyCombinedStart1 = nil
+		end
+		return active
 	end
 })
 
@@ -4006,10 +4083,16 @@ mc:trackMission({
 			trigger.action.outSoundForCoalition(2, "cancel.ogg")
 		end
 	end,
-	isActive = function()
+	isActive = function(mission)
 		if not resupplyTarget2 then return false end
 		local targetzn = bc:getZoneByName(resupplyTarget2)
-		return targetzn and targetzn.side == 2 and targetzn:canRecieveSupply()
+		local active = targetzn and bc:_playerSupplyTargetNeedsSupply(targetzn, {})
+		if not active and not mission.isRunning then
+			if resupplySuppressStart2 == resupplyTarget2 then resupplySuppressStart2 = nil end
+			resupplyTarget2 = nil
+			resupplyCombinedStart2 = nil
+		end
+		return active
 	end
 })
 
@@ -4052,13 +4135,18 @@ mc:trackMission({
 			trigger.action.outSoundForCoalition(2, "cancel.ogg")
 		end
 	end,
-	isActive = function()
+	isActive = function(mission)
 		if not attackTarget1 then return false end
 		local targetzn = bc:getZoneByName(attackTarget1)
-		if targetzn and targetzn.zone and targetzn.side == 1 then
-			return not targetzn.suspended
+		local active = targetzn and targetzn.zone and targetzn.side == 1 and not targetzn.suspended or false
+		if not active and not mission.isRunning then
+			if attackCombinedStart1 == attackTarget1 then
+				attackCombinedStart1 = nil
+				attackCombinedStart2 = nil
+			end
+			attackTarget1 = nil
 		end
-		return false
+		return active
 	end
 })
 
@@ -4094,20 +4182,71 @@ mc:trackMission({
 		bc:removeMissionTag(attackTarget2, L10N:Get("ZONE_MISSION_TAG_ATTACK"))
 		bc:refreshZoneLabel(attackTarget2)
 		normandyOpeningAttackSlots[2] = false
-		normandyRetireOpeningAttack2 = false
+		bc.normandyAttackMissionState.retireOpeningAttack2 = false
 		attackTarget2 = nil
 		if not missionCompleted and trigger.misc.getUserFlag(180) == 0 then
 			trigger.action.outSoundForCoalition(2, "cancel.ogg")
 		end
 	end,
-	isActive = function()
+	isActive = function(mission)
 		if not attackTarget2 then return false end
-		if normandyRetireOpeningAttack2 then return false end
-		local targetzn = bc:getZoneByName(attackTarget2)
-		if targetzn and targetzn.zone and targetzn.side == 1 then
-			return not targetzn.suspended
+		local targetzn = not bc.normandyAttackMissionState.retireOpeningAttack2 and bc:getZoneByName(attackTarget2)
+		local active = targetzn and targetzn.zone and targetzn.side == 1 and not targetzn.suspended or false
+		if not active and not mission.isRunning then
+			if attackCombinedStart2 == attackTarget2 then
+				attackCombinedStart1 = nil
+				attackCombinedStart2 = nil
+			end
+			if attackSuppressStart2 == attackTarget2 then attackSuppressStart2 = nil end
+			normandyOpeningAttackSlots[2] = false
+			bc.normandyAttackMissionState.retireOpeningAttack2 = false
+			attackTarget2 = nil
 		end
-		return false
+		return active
+	end
+})
+
+mc:trackMission({
+	title = function()
+		local wp = WaypointList[attackTarget3] or ""
+		return L10N:Format("NORMANDY_MISSION_ATTACK_TITLE", attackTarget3, wp)
+	end,
+	description = function()
+		return L10N:Format("NORMANDY_MISSION_ATTACK_DESC", attackTarget3)
+	end,
+	messageStart = nil,
+	messageEnd = function()
+		return L10N:Format("NORMANDY_MISSION_ATTACK_END", attackTarget3Started or attackTarget3)
+	end,
+	startAction = function()
+		attackTarget3Started = attackTarget3
+		bc:addMissionTag(attackTarget3, L10N:Get("ZONE_MISSION_TAG_ATTACK"))
+		bc:refreshZoneLabel(attackTarget3)
+		local wp = WaypointList[attackTarget3] or ""
+		trigger.action.outTextForCoalition(2, L10N:Format("NORMANDY_MISSION_ATTACK_START_ONE", attackTarget3, wp), 30)
+		if not missionCompleted and trigger.misc.getUserFlag(180) == 0 then
+			trigger.action.outSoundForCoalition(2, "cas.ogg")
+		end
+	end,
+	endAction = function()
+		local endedTarget = attackTarget3Started or attackTarget3
+		bc:removeMissionTag(endedTarget, L10N:Get("ZONE_MISSION_TAG_ATTACK"))
+		bc:refreshZoneLabel(endedTarget)
+		attackTarget3Started = nil
+		attackTarget3 = nil
+		if not missionCompleted and trigger.misc.getUserFlag(180) == 0 then
+			trigger.action.outSoundForCoalition(2, "cancel.ogg")
+		end
+	end,
+	isActive = function(mission)
+		if not attackTarget3 then return false end
+		local targetzn = bc:getZoneByName(attackTarget3)
+		local active = targetzn and targetzn.zone and targetzn.side == 1 and not targetzn.suspended or false
+		if not active and not mission.isRunning then
+			attackTarget3Started = nil
+			attackTarget3 = nil
+		end
+		return active
 	end
 })
 
@@ -4124,6 +4263,10 @@ mc:trackMission({
         return L10N:Format("NORMANDY_MISSION_CAPTURE_START", captureTarget, wp)
     end,
     messageEnd = function()
+        local targetzn = captureTarget and bc:getZoneByName(captureTarget) or nil
+        if targetzn and (targetzn.pendingCapture or targetzn._pendingCaptureRestore) then
+            return nil
+        end
         return L10N:Format("NORMANDY_MISSION_CAPTURE_END", captureTarget) end,
     startAction = function()
         local MissionType = L10N:Get("ZONE_MISSION_TAG_CAPTURE")
@@ -4135,586 +4278,127 @@ mc:trackMission({
     end,
     endAction = function()
         local MissionType = L10N:Get("ZONE_MISSION_TAG_CAPTURE")
+        local targetzn = captureTarget and bc:getZoneByName(captureTarget) or nil
+        local capturePending = targetzn and (targetzn.pendingCapture ~= nil or targetzn._pendingCaptureRestore ~= nil)
         bc:removeMissionTag(captureTarget, MissionType)
         bc:refreshZoneLabel(captureTarget)
         captureTarget = nil
-        if not missionCompleted then
+        if not missionCompleted and not capturePending then
             trigger.action.outSoundForCoalition(2, "cancel.ogg")
         end
     end,
-    isActive = function()
+    isActive = function(mission)
         if not captureTarget then return false end
         local targetzn = bc:getZoneByName(captureTarget)
-        return targetzn.side == 0 and targetzn.active
+        local active = targetzn.side == 0 and targetzn.active
+            and not targetzn.pendingCapture and not targetzn._pendingCaptureRestore
+        if not active and not mission.isRunning then captureTarget = nil end
+        return active
     end
 })
 
 
-function generateSEADMission()
-    if seadTarget then return true end
-    local attackAnchors = {}
-    local seenAnchors = {}
-    for _, zoneName in ipairs({ attackTarget1, attackTarget2 }) do
-        if zoneName and not seenAnchors[zoneName] then
-            local targetzn = bc:getZoneByName(zoneName)
-            if targetzn and targetzn.zone and targetzn.side == 1 then
-                seenAnchors[zoneName] = true
-                attackAnchors[#attackAnchors + 1] = targetzn.zone
-            end
-        end
-    end
-    if #attackAnchors == 0 then return false end
-
-    local function getMinDist(zoneName)
-        local minDist = nil
-        for _, anchorZone in ipairs(attackAnchors) do
-            local dist = ZONE_DISTANCES[anchorZone] and ZONE_DISTANCES[anchorZone][zoneName]
-            if dist and (not minDist or dist < minDist) then
-                minDist = dist
-            end
-        end
-        return minDist
-    end
-
-    local function isSEADZone(zone)
-        local lname = zone.zone:lower()
-        return zone.side == 1 and zone.active and (not zone.suspended)
-           and (lname:find('sam') or lname:find('defence'))
-           and (not isZoneUnderSEADMission or not isZoneUnderSEADMission(zone.zone))
-    end
-
-    local validSEADZones = {}
-    for _, zone in ipairs(bc.zones) do
-        local znB = zone.zone
-        local minDist = znB and getMinDist(znB) or nil
-        if isSEADZone(zone) and bc:HasSeadTargets(zone.zone) and minDist and minDist <= 24000 then
-            table.insert(validSEADZones, zone.zone)
-        end
-    end
-
-    if #validSEADZones == 0 then
-        for fromZoneName, neighbors in pairs(blueDirector:_operationalConnectionMap()) do
-            for toZoneName in pairs(neighbors) do
-                if fromZoneName < toZoneName then
-                    local from = bc:getZoneByName(fromZoneName)
-                    local to = bc:getZoneByName(toZoneName)
-                    if from and to and from.side ~= to.side and from.side ~= 0 and to.side ~= 0 then
-                        if isSEADZone(from) and bc:HasSeadTargets(from.zone) then
-                            table.insert(validSEADZones, from.zone)
-                        end
-                        if isSEADZone(to) and bc:HasSeadTargets(to.zone) then
-                            table.insert(validSEADZones, to.zone)
-                        end
-                    end
-                end
-            end
-        end
-    end
-
-    if #validSEADZones == 0 then return false end
-    local pick = blueDirector:selectMissionTarget('SEAD', validSEADZones, { primaryZone = attackTarget1 or attackTarget2 })
-    if pick then
-        seadTarget = pick
-        return true
-    end
-end
-
-mc:trackMission({
-    title = function() return L10N:Format("MISSION_SEAD_TITLE", seadTarget) end,
-    description = function() return L10N:Format("MISSION_SEAD_DESCRIPTION", seadTarget) end,
-    messageStart = function() return L10N:Format("MISSION_SEAD_START", seadTarget) end,
-    messageEnd = function() return LTGet("MISSION_SEAD_END") end,
-    startAction = function()
-        local MissionType = "SEAD"
-        bc:addMissionTag(seadTarget, MissionType)
-        bc:refreshZoneLabel(seadTarget)
-        if not missionCompleted then trigger.action.outSoundForCoalition(2,"ding.ogg") end
-    end,
-    endAction = function()
-        local MissionType = "SEAD"
-        bc:removeMissionTag(seadTarget, MissionType)
-        bc:refreshZoneLabel(seadTarget)
-        seadTarget = nil
-        if not missionCompleted then trigger.action.outSoundForCoalition(2,"cancel.ogg") end
-    end,
-    isActive = function()
-        if not seadTarget then return false end
-        local zn = bc:getZoneByName(seadTarget)
-        return zn and zn.side == 1 and not zn.suspended and bc:HasSeadTargets(seadTarget)
-    end
-})
-
-deadTarget = nil
-function generateDEADMission()
-    if deadTarget then return true end
-    if seadTarget then return true end
-    local attackAnchors = {}
-    local seenAnchors = {}
-    for _, zoneName in ipairs({ attackTarget1, attackTarget2 }) do
-        if zoneName and not seenAnchors[zoneName] then
-            local targetzn = bc:getZoneByName(zoneName)
-            if targetzn and targetzn.zone and targetzn.side == 1 then
-                seenAnchors[zoneName] = true
-                attackAnchors[#attackAnchors + 1] = targetzn.zone
-            end
-        end
-    end
-    if #attackAnchors == 0 then return false end
-
-    local function getMinDist(zoneName)
-        local minDist = nil
-        for _, anchorZone in ipairs(attackAnchors) do
-            local dist = ZONE_DISTANCES[anchorZone] and ZONE_DISTANCES[anchorZone][zoneName]
-            if dist and (not minDist or dist < minDist) then
-                minDist = dist
-            end
-        end
-        return minDist
-    end
-
-    local function isDEADZone(zone)
-        local lname = zone.zone:lower()
-        return zone.side == 1 and zone.active and (lname:find('sam') or lname:find('defence'))
-    end
-
-    local validDEADZones = {}
-    for _, zone in ipairs(bc.zones) do
-        local znB = zone.zone
-        local minDist = znB and getMinDist(znB) or nil
-        if isDEADZone(zone) and not bc:HasSeadTargets(zone.zone) and minDist and minDist <= 24000 then
-            table.insert(validDEADZones, zone.zone)
-        end
-    end
-
-    if #validDEADZones == 0 then
-        for _, connection in ipairs(bc.connections) do
-            local from, to = bc:getConnectionZones(connection)
-            if from and to and from.side ~= to.side and from.side ~= 0 and to.side ~= 0 and
-               ((not to.suspended) or from.suspended) then
-                if isDEADZone(from) and not bc:HasSeadTargets(from.zone) then
-                    table.insert(validDEADZones, from.zone)
-                end
-                if isDEADZone(to) and not bc:HasSeadTargets(to.zone) then
-                    table.insert(validDEADZones, to.zone)
-                end
-            end
-        end
-    end
-
-    if #validDEADZones == 0 then return false end
-
-    deadTarget = blueDirector:selectMissionTarget('DEAD', validDEADZones, { primaryZone = attackTarget1 or attackTarget2 })
-    return true
-end
-
-mc:trackMission({
-    title = function() return L10N:Format("MISSION_DEAD_TITLE", deadTarget) end,
-    description = function() return L10N:Format("MISSION_DEAD_DESCRIPTION", deadTarget) end,
-    messageStart = function() return L10N:Format("MISSION_DEAD_START", deadTarget) end,
-    messageEnd = function() return LTGet("MISSION_DEAD_END") end,
-    startAction = function()
-        local MissionType = "DEAD"
-        bc:addMissionTag(deadTarget, MissionType)
-        bc:refreshZoneLabel(deadTarget)
-        if not missionCompleted then trigger.action.outSoundForCoalition(2,"ding.ogg") end
-    end,
-    endAction = function()
-        local MissionType = "DEAD"
-        bc:removeMissionTag(deadTarget, MissionType)
-        bc:refreshZoneLabel(deadTarget)
-        deadTarget = nil
-        if not missionCompleted then trigger.action.outSoundForCoalition(2,"cancel.ogg") end
-    end,
-    isActive = function()
-        if not deadTarget then return false end
-        local zn = bc:getZoneByName(deadTarget)
-        return zn and zn.side == 1 and not zn.suspended and not bc:HasSeadTargets(deadTarget)
-    end
-})
+mc:registerDeadMissions()
 
 ---------------------------------------------------------------------
 --                         RECON MISSION                           --
-reconMissionTarget = nil
-reconMissionWinner = nil
-reconMissionCooldownUntil = 0
-reconMissionCompleted = false
-reconMissionCompletedTarget = nil
-
-mc:trackMission({
-	title = function()
-		local target = reconMissionCompletedTarget or reconMissionTarget
-		if not target then return LTGet("SYRIA_DYNAMIC_RECON_TITLE_EMPTY") end
-		local wp = WaypointList[target] or ""
-		return L10N:Format("SYRIA_DYNAMIC_RECON_TITLE", target, wp)
-	end,
-	description = function()
-		local target = reconMissionCompletedTarget or reconMissionTarget
-		if not target then return LTGet("SYRIA_DYNAMIC_RECON_DESC_EMPTY") end
-		return L10N:Format("SYRIA_DYNAMIC_RECON_DESC", target)
-	end,
-	messageStart = function()
-		local target = reconMissionCompletedTarget or reconMissionTarget
-		if not target then return LTGet("SYRIA_DYNAMIC_RECON_START_EMPTY") end
-		local wp = WaypointList[target] or ""
-		return L10N:Format("SYRIA_DYNAMIC_RECON_START", target, wp)
-	end,
-	messageEnd = function()
-		if reconMissionCompleted and reconMissionCompletedTarget and reconMissionWinner then
-			return L10N:Format("SYRIA_DYNAMIC_RECON_END_BY", reconMissionCompletedTarget, reconMissionWinner)
-		end
-		if reconMissionCompletedTarget then
-			return L10N:Format("SYRIA_DYNAMIC_RECON_END_TARGET", reconMissionCompletedTarget)
-		end
-		return LTGet("SYRIA_DYNAMIC_RECON_END")
-	end,
-	startAction = function()
-		reconMissionCompleted = false
-		reconMissionWinner = nil
-		reconMissionCompletedTarget = nil
-
-		bc:addMissionTag(reconMissionTarget, L10N:Get("ZONE_MISSION_TAG_RECON"))
-		bc:refreshZoneLabel(reconMissionTarget)
-
-		startReconMissionZoneTracker(reconMissionTarget)
-		if not missionCompleted and trigger.misc.getUserFlag(180) == 0 then
-			trigger.action.outSoundForCoalition(2, "ding.ogg")
-		end
-	end,
-	endAction = function()
-		local target = reconMissionCompletedTarget or reconMissionTarget
-		if target then
-			stopReconMissionZoneTracker(target)
-			bc:removeMissionTag(target, L10N:Get("ZONE_MISSION_TAG_RECON"))
-			bc:refreshZoneLabel(target)
-		end
-
-		if reconMissionCompleted and target and reconMissionWinner then
-			local reward = 100
-			bc:addContribution(reconMissionWinner, 2, reward)
-			local jp = bc.jointPairs and bc.jointPairs[reconMissionWinner]
-			if jp and bc:_jointPartnerAlive(reconMissionWinner) and bc:_jointPartnerAlive(jp) and bc.playerContributions[2][jp] ~= nil then
-				bc:addContribution(jp, 2, reward)
-				bc:addTempStat(jp, "Recon mission (Joint mission)", 1)
-				bc:addTempStat(reconMissionWinner, "Recon mission (Joint mission)", 1)
-				trigger.action.outTextForCoalition(2, L10N:Format("SYRIA_DYNAMIC_RECON_COMPLETED_JOINT", reconMissionWinner, jp, target, reward), 20)
-				local jgn = bc.groupNameByPlayer[jp]
-				local jgr = Group.getByName(jgn)
-				if jgr then
-					local ju = jgr:getUnit(1)
-					if ju and not Utils.isInAir(ju) then
-						SCHEDULER:New(nil, function()
-							if ju and ju:isExist() then
-								world.onEvent({id=world.event.S_EVENT_LAND,time=timer.getAbsTime(),initiator=ju,initiatorPilotName=jp,initiator_unit_type=ju:getTypeName(),initiator_coalition=ju:getCoalition(),skipRewardMsg=true})
-							end
-						end, {}, 5, 0)
-					end
-				end
-			else
-				bc:addTempStat(reconMissionWinner, "Recon mission", 1)
-				trigger.action.outTextForCoalition(2, L10N:Format("SYRIA_DYNAMIC_RECON_COMPLETED_SOLO", reconMissionWinner, target, reward), 20)
+function RegisterDirectorReconMission(slotIndex)
+	mc:trackMission({
+		title = function()
+			local target = bc.reconMissions.slots[slotIndex].targetZone
+			if not target then return LTGet("SYRIA_DYNAMIC_RECON_TITLE_EMPTY") end
+			local wp = WaypointList[target] or ""
+			return L10N:Format("SYRIA_DYNAMIC_RECON_TITLE", target, wp)
+		end,
+		description = function()
+			local target = bc.reconMissions.slots[slotIndex].targetZone
+			if not target then return LTGet("SYRIA_DYNAMIC_RECON_DESC_EMPTY") end
+			return L10N:Format("SYRIA_DYNAMIC_RECON_DESC", target)
+		end,
+		messageStart = function()
+			local target = bc.reconMissions.slots[slotIndex].targetZone
+			if not target then return LTGet("SYRIA_DYNAMIC_RECON_START_EMPTY") end
+			local wp = WaypointList[target] or ""
+			return L10N:Format("SYRIA_DYNAMIC_RECON_START", target, wp)
+		end,
+		messageEnd = function()
+			local slot = bc.reconMissions.slots[slotIndex]
+			if slot.completed and slot.targetZone and slot.winner then
+				return L10N:Format("SYRIA_DYNAMIC_RECON_END_BY", slot.targetZone, slot.winner)
 			end
-			startZoneIntel(target, 10 * 60)
-			reconMissionCooldownUntil = timer.getTime() + 900
-		end
+			if slot.targetZone then
+				return L10N:Format("SYRIA_DYNAMIC_RECON_END_TARGET", slot.targetZone)
+			end
+			return LTGet("SYRIA_DYNAMIC_RECON_END")
+		end,
+		startAction = function()
+			local slot = bc.reconMissions.slots[slotIndex]
+			slot.completed = false
+			slot.winner = nil
+			slot.started = true
 
-		reconMissionTarget = nil
-		reconMissionWinner = nil
-		reconMissionCompleted = false
-		reconMissionCompletedTarget = nil
+			bc:addMissionTag(slot.targetZone, L10N:Get("ZONE_MISSION_TAG_RECON"))
+			bc:refreshZoneLabel(slot.targetZone)
 
-		if not missionCompleted and trigger.misc.getUserFlag(180) == 0 then
-			trigger.action.outSoundForCoalition(2, "cancel.ogg")
+			startReconMissionZoneTracker(slot.targetZone)
+			if not missionCompleted and trigger.misc.getUserFlag(180) == 0 then
+				trigger.action.outSoundForCoalition(2, "ding.ogg")
+			end
+		end,
+		endAction = function()
+			local slot = bc.reconMissions.slots[slotIndex]
+			local target = slot.targetZone
+			local winner = slot.winner
+			local completed = slot.completed
+			if target then
+				stopReconMissionZoneTracker(target)
+				bc:removeMissionTag(target, L10N:Get("ZONE_MISSION_TAG_RECON"))
+				bc:refreshZoneLabel(target)
+			end
+
+			if completed and target and winner then
+				local reward = 100
+				local jp = bc:awardJointMissionReward(winner, 2, reward, "Recon mission")
+				if jp then
+					trigger.action.outTextForCoalition(2, L10N:Format("SYRIA_DYNAMIC_RECON_COMPLETED_JOINT", winner, jp, target, reward), 20)
+				else
+					trigger.action.outTextForCoalition(2, L10N:Format("SYRIA_DYNAMIC_RECON_COMPLETED_SOLO", winner, target, reward), 20)
+				end
+				startZoneIntel(target, 10 * 60)
+				bc.reconMissions.cooldownByTarget[target] = timer.getTime() + 900
+			end
+
+			bc:resetReconMissionSlot(slotIndex)
+			if not missionCompleted and trigger.misc.getUserFlag(180) == 0 then
+				trigger.action.outSoundForCoalition(2, "cancel.ogg")
+			end
+		end,
+		isActive = function()
+			local slot = bc.reconMissions.slots[slotIndex]
+			if slot.completed or not slot.active or not slot.targetZone then return false end
+			local targetzn = bc:getZoneByName(slot.targetZone)
+			if not targetzn or targetzn.side ~= 1 or not targetzn.active or targetzn.suspended then
+				if not slot.started then bc:resetReconMissionSlot(slotIndex) end
+				return false
+			end
+			return true
 		end
-	end,
-	isActive = function()
-		if reconMissionCompleted then return false end
-		if not reconMissionTarget then return false end
-		local targetzn = bc:getZoneByName(reconMissionTarget)
-		return targetzn and targetzn.side == 1 and targetzn.active and not targetzn.suspended
-	end
-})
+	})
+end
+
+for slotIndex = 1, bc.reconMissionMaxSlots do
+	RegisterDirectorReconMission(slotIndex)
+end
 --                    End of RECON MISSION                         --
 ---------------------------------------------------------------------
 
 
-function generateCaptureMission()
-    if captureTarget ~= nil then return true end
-    
-    local validzones = {}
-    for _, v in ipairs(bc.zones) do
-        if v.active and v.side == 0 and (not v.NeutralAtStart or v.firstCaptureByRed) and 
-           not string.find(v.zone, "Hidden") then
-            table.insert(validzones, v.zone)
-        end
-    end
-    
-    if #validzones == 0 then return false end
-    
-    local choice = blueDirector:selectMissionTarget('CAPTURE', validzones, nil)
-    if choice then
-        captureTarget = choice
-        return true
-    end
-end
 
 
-function generateAttackMission()
-    if missionCompleted then return true end
-	local validzones = {}
-	local validSeen = {}
-	local redByBlue = {}
-	local created1 = false
-	local created2 = false
-	local openingPhase = _isNormandyOpeningPhase()
-	local openingFront = openingPhase and normandyOpeningFrontByZone[attackTarget1 or attackTarget2] or nil
-	if not openingPhase and attackTarget1 and attackTarget2
-		and normandyOpeningAttackSlots[1] and normandyOpeningAttackSlots[2]
-		and not normandyRetireOpeningAttack2 then
-		normandyRetireOpeningAttack2 = true
-		return true
-	end
 
-	local function addFrontlineCandidates(from, to)
-		if _isFrontlineConnectionEligible(from, to) then
-			if _isValidAttackMissionZone(from) and not validSeen[from.zone] then
-				validSeen[from.zone] = true
-				table.insert(validzones, from.zone)
-			end
-			if _isValidAttackMissionZone(to) and not validSeen[to.zone] then
-				validSeen[to.zone] = true
-				table.insert(validzones, to.zone)
-			end
 
-			if _isValidAttackMissionZone(from) and to and to.side == 2 then
-				redByBlue[to.zone] = redByBlue[to.zone] or {}
-				local found = false
-				for _, zoneName in ipairs(redByBlue[to.zone]) do
-					if zoneName == from.zone then found = true break end
-				end
-				if not found then table.insert(redByBlue[to.zone], from.zone) end
-			end
-			if _isValidAttackMissionZone(to) and from and from.side == 2 then
-				redByBlue[from.zone] = redByBlue[from.zone] or {}
-				local found = false
-				for _, zoneName in ipairs(redByBlue[from.zone]) do
-					if zoneName == to.zone then found = true break end
-				end
-				if not found then table.insert(redByBlue[from.zone], to.zone) end
-			end
-		end
-	end
 
-	local function addOpeningCandidate(zoneName, requireAirbase)
-		local zone = bc:getZoneByName(zoneName)
-		if _isValidAttackMissionZone(zone) and (not requireAirbase or zone.airbaseName)
-			and not validSeen[zoneName] then
-			validSeen[zoneName] = true
-			validzones[#validzones + 1] = zoneName
-		end
-	end
 
-	if openingPhase then
-		for _, front in ipairs(openingFront and { openingFront } or normandyOpeningFronts) do
-			for _, zoneName in ipairs(front.primary) do
-				addOpeningCandidate(zoneName, true)
-			end
-		end
-	else
-		for fromZoneName, neighbors in pairs(blueDirector:_groundConnectionMap()) do
-			local from = bc:getZoneByName(fromZoneName)
-			for toZoneName in pairs(neighbors) do
-				addFrontlineCandidates(from, bc:getZoneByName(toZoneName))
-			end
-		end
-	end
-
-    if #validzones == 0 then return false end
-
-	if not attackTarget1 then
-		local pool = {}
-		for _, zoneName in ipairs(validzones) do
-			if zoneName ~= attackTarget2 then
-				table.insert(pool, zoneName)
-			end
-		end
-		if #pool > 0 then
-			attackTarget1 = blueDirector:selectMissionTarget('ATTACK', pool, {
-				anchorZone = attackTarget2,
-				captureZone = captureTarget,
-			})
-			if attackTarget1 then
-				normandyOpeningAttackSlots[1] = openingPhase
-				created1 = true
-			end
-		end
-	end
-
-	if openingPhase and attackTarget1 then
-		openingFront = normandyOpeningFrontByZone[attackTarget1]
-	end
-
-	if not attackTarget2 then
-		local pool = {}
-		local seenPool = {}
-		local anchor = attackTarget1 or attackTarget2
-		if openingPhase and openingFront then
-			for _, zoneNames in ipairs({ openingFront.primary, openingFront.support }) do
-				for _, zoneName in ipairs(zoneNames) do
-					local zone = bc:getZoneByName(zoneName)
-					if zoneName ~= attackTarget1 and zoneName ~= attackTarget2
-						and _isValidAttackMissionZone(zone) and not seenPool[zoneName] then
-						seenPool[zoneName] = true
-						pool[#pool + 1] = zoneName
-					end
-				end
-			end
-		elseif anchor then
-			for _, redList in pairs(redByBlue) do
-				local hasAnchor = false
-				for _, zoneName in ipairs(redList) do
-					if zoneName == anchor then
-						hasAnchor = true
-						break
-					end
-				end
-				if hasAnchor then
-					for _, zoneName in ipairs(redList) do
-						if zoneName ~= attackTarget1 and zoneName ~= attackTarget2 and not seenPool[zoneName] then
-							seenPool[zoneName] = true
-							table.insert(pool, zoneName)
-						end
-					end
-				end
-			end
-			if validSeen[anchor] then
-				local anchorArea = blueDirector.areaByZone[anchor]
-				for _, member in ipairs(anchorArea and anchorArea.membersByOperationalRole.infrastructure or {}) do
-					local zoneName = member.name
-					if zoneName ~= attackTarget1 and zoneName ~= attackTarget2
-						and _isValidAttackMissionZone(member.zone) and not seenPool[zoneName] then
-						seenPool[zoneName] = true
-						pool[#pool + 1] = zoneName
-					end
-				end
-			end
-		end
-		if #pool == 0 and not openingPhase then
-			for _, zoneName in ipairs(validzones) do
-				if zoneName ~= attackTarget1 and zoneName ~= attackTarget2 then
-					table.insert(pool, zoneName)
-				end
-			end
-		end
-		if #pool > 0 then
-			attackTarget2 = blueDirector:selectMissionTarget('ATTACK_SUPPORT', pool, {
-				primaryZone = attackTarget1,
-				allowCrossAreaSupport = openingPhase,
-			})
-			if attackTarget2 then
-				normandyOpeningAttackSlots[2] = openingPhase
-				created2 = true
-			end
-		end
-	end
-
-	attackCombinedStart1 = nil
-	attackCombinedStart2 = nil
-	if created1 and created2 and attackTarget1 and attackTarget2 then
-		attackCombinedStart1 = attackTarget1
-		attackCombinedStart2 = attackTarget2
-	end
-
-	return attackTarget1 ~= nil or attackTarget2 ~= nil
-end
-
-function generateSupplyMission()
-	if bc._blueZoneCountRaw <= 1 then return false end
-	local preferred = {}
-	local validzones = {}
-	local attackFrontSet = {}
-	local created1 = false
-	local created2 = false
-	if attackTarget1 then attackFrontSet[attackTarget1] = true end
-	if attackTarget2 then attackFrontSet[attackTarget2] = true end
-
-	for attackZoneName in pairs(attackFrontSet) do
-		local attackZone = bc:getZoneByName(attackZoneName)
-		if attackZone and attackZone.side ~= 0 then
-			for neighborName in pairs(blueDirector:_groundNeighbors(attackZoneName)) do
-				local neighbor = bc:getZoneByName(neighborName)
-				if neighbor and neighbor.side == 2 and neighbor.side ~= attackZone.side
-					and neighbor.zone ~= 'CarrierGroup' and neighbor:canRecieveSupply() then
-					local found = false
-					for _, zoneName in ipairs(preferred) do
-						if zoneName == neighbor.zone then found = true break end
-					end
-					if not found then table.insert(preferred, neighbor.zone) end
-				end
-			end
-		end
-	end
-
-	for _, v in ipairs(bc.zones) do
-		if v.zone ~= 'CarrierGroup' and v.side == 2 and v:canRecieveSupply() then
-			local found = false
-			for _, zoneName in ipairs(validzones) do
-				if zoneName == v.zone then found = true break end
-			end
-			if not found then table.insert(validzones, v.zone) end
-		end
-	end
-
-	if #validzones == 0 then return false end
-
-	if not resupplyTarget1 then
-		local pool = {}
-		for _, zoneName in ipairs(preferred) do
-			if zoneName ~= resupplyTarget2 then
-				table.insert(pool, zoneName)
-			end
-		end
-		if #pool == 0 then
-			for _, zoneName in ipairs(validzones) do
-				if zoneName ~= resupplyTarget2 then
-					table.insert(pool, zoneName)
-				end
-			end
-		end
-		if #pool > 0 then
-			resupplyTarget1 = pool[math.random(1, #pool)]
-			created1 = true
-		end
-	end
-
-	if not resupplyTarget2 then
-		local pool = {}
-		for _, zoneName in ipairs(preferred) do
-			if zoneName ~= resupplyTarget1 then
-				table.insert(pool, zoneName)
-			end
-		end
-		if #pool == 0 then
-			for _, zoneName in ipairs(validzones) do
-				if zoneName ~= resupplyTarget1 then
-					table.insert(pool, zoneName)
-				end
-			end
-		end
-		if #pool > 0 then
-			resupplyTarget2 = pool[math.random(1, #pool)]
-			created2 = true
-		end
-	end
-
-	resupplyCombinedStart1 = nil
-	resupplyCombinedStart2 = nil
-	if created1 and created2 and resupplyTarget1 and resupplyTarget2 then
-		resupplyCombinedStart1 = resupplyTarget1
-		resupplyCombinedStart2 = resupplyTarget2
-	end
-
-	return resupplyTarget1 ~= nil or resupplyTarget2 ~= nil
-end
 
 timer.scheduleFunction(function(_, time)
 	if generateCaptureMission() then
@@ -4733,20 +4417,17 @@ timer.scheduleFunction(function(_, time)
 end, {}, timer.getTime() + 35)
 
 timer.scheduleFunction(function(_, time)
-	if generateSEADMission() then
-		return time+300
-	else
-		return time+120
+	if _isNormandyOpeningPhase() then return time+30 end
+	local hadThirdAttack = attackTarget3 ~= nil
+	if not hadThirdAttack and blueDirector:hasBlueThirdAttackDemand(timer.getAbsTime()) then
+		generateAttackMission(true)
 	end
-end, {}, timer.getTime() + 120)
-timer.scheduleFunction(function(_, time)
-
-	if generateDEADMission() then
-		return time+300
-	else
-		return time+120
+	if not hadThirdAttack and attackTarget3 then
+		checkAndGenerateCASMission()
+		generateRunwayStrikeMission()
 	end
-end, {}, timer.getTime() + 140)
+	return time+30
+end, {}, timer.getTime() + 45)
 
 timer.scheduleFunction(function(_, time)
 	if checkAndGenerateCASMission() then
@@ -4812,12 +4493,20 @@ local normandyZoneFlagChecks = {
 	{ flag=210, groupName='AXE_Train_Amiens-resupply-Abbeville', zoneName='supply-Amiens' },
 	{ flag=211, groupName='AXE_Train_Abbeville-resupply-Le Touquet', zoneName='supply-LeTouquet' },
 	{ flag=212, groupName='AXE_Train_Paris-resupply-Orly', zoneName='supply-Orly' },
+	{ flag=213, groupName='AXE_Train_Bernay-resupply-Caen', zoneName='supply-Bernay' },
+	{ flag=214, groupName='AXE_Train_Paris-resupply-Saint-Andre', zoneName='supply-SaintAndre' },
 	{ flag=300, groupName='UK_Train_London-resupply-Farnborough', zoneName='supply-Farnborough' },
 	{ flag=301, groupName='UK_Train_London-resupply-Manston', zoneName='supply-Manston' },
 	{ flag=302, groupName='UK_Train_London-resupply-Ford', zoneName='supply-Ford' },
 	{ flag=303, groupName='UK_Train_London-resupply-Chailey', zoneName='supply-chailey' },
 	{ flag=304, groupName='UK_Train_Manston-resupply-Dover', zoneName='supply-Dover' },
+	{ flag=305, groupName='UK_Train_London-resupply-Hawkinge', zoneName='Hawkinge' },
 }
+
+for _, entry in ipairs(normandyZoneFlagChecks) do
+	local route = bc.trainSupplyRoutesByGroup[entry.groupName]
+	if route then route.arrivalFlag = entry.flag end
+end
 
 local function checkNormandyZoneFlag(entry)
 	local group = Group.getByName(entry.groupName)
@@ -4837,13 +4526,14 @@ function checkZoneFlags()
 -------------- Capture/Upgrade Trains Blue-------------------
 if trigger.misc.getUserFlag(300) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('London')
-		local zntgt = bc:getZoneByName('Farnborough')
-            if znsrc and znsrc.side == 2 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(2)
+		local route = bc.trainSupplyRoutesByGroup['UK_Train_London-resupply-Farnborough']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 2 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
@@ -4858,13 +4548,14 @@ if trigger.misc.getUserFlag(300) == 1 then
 
 	if trigger.misc.getUserFlag(301) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('London')
-		local zntgt = bc:getZoneByName('Manston')
-            if znsrc and znsrc.side == 2 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(2)
+		local route = bc.trainSupplyRoutesByGroup['UK_Train_London-resupply-Manston']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 2 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
@@ -4879,13 +4570,14 @@ if trigger.misc.getUserFlag(300) == 1 then
 
 	if trigger.misc.getUserFlag(302) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('London')
-		local zntgt = bc:getZoneByName('Ford')
-            if znsrc and znsrc.side == 2 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(2)
+		local route = bc.trainSupplyRoutesByGroup['UK_Train_London-resupply-Ford']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 2 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
@@ -4900,13 +4592,14 @@ if trigger.misc.getUserFlag(300) == 1 then
 
 	if trigger.misc.getUserFlag(303) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('London')
-		local zntgt = bc:getZoneByName('Chailey')
-            if znsrc and znsrc.side == 2 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(2)
+		local route = bc.trainSupplyRoutesByGroup['UK_Train_London-resupply-Chailey']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 2 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
@@ -4921,13 +4614,14 @@ if trigger.misc.getUserFlag(300) == 1 then
 
 	if trigger.misc.getUserFlag(304) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('Manston')
-		local zntgt = bc:getZoneByName('Dover')
-            if znsrc and znsrc.side == 2 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(2)
+		local route = bc.trainSupplyRoutesByGroup['UK_Train_Manston-resupply-Dover']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 2 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
@@ -4940,19 +4634,38 @@ if trigger.misc.getUserFlag(300) == 1 then
 		trigger.action.setUserFlag(304, 0)
 	end
 
+	if trigger.misc.getUserFlag(305) == 1 then
+		local route = bc.trainSupplyRoutesByGroup['UK_Train_London-resupply-Hawkinge']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
+				elseif zntgt.side == znsrc.side then
+					applyTrainSupply(zntgt)
+				else
+					return L10N:Format("NORMANDY_ZONE_IS_SIDE", "Hawkinge", L10N:Get("ZONE_SIDE_RED"))
+				end
+			else
+				return L10N:Format("NORMANDY_ZONE_NOT_SIDE", "London", L10N:Get("ZONE_SIDE_BLUE"))
+            end
+		trigger.action.setUserFlag(305, 0)
+	end
+
 
 -------------- Capture/Upgrade Trains Red-------------------
 	if trigger.misc.getUserFlag(200) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
 		--env.info("Flag 200 triggered")
-		local znsrc = bc:getZoneByName('Cherbourg')
-		local zntgt = bc:getZoneByName('Valognes')
-            if znsrc and znsrc.side == 1 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(1)
+		local route = bc.trainSupplyRoutesByGroup['AXE_Train_Cherbourg-resupply-Valognes']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
 					--env.info("Valognes captured")
-				elseif zntgt and zntgt.side == 1 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 					--env.info("Valognes upgraded")
@@ -4969,13 +4682,14 @@ if trigger.misc.getUserFlag(300) == 1 then
 
 	if trigger.misc.getUserFlag(201) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('Valognes')
-		local zntgt = bc:getZoneByName('Le Molay')
-            if znsrc and znsrc.side == 1 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(1)
+		local route = bc.trainSupplyRoutesByGroup['AXE_Train_Valognes-resupply-Le Molay']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 1 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
@@ -4990,13 +4704,14 @@ if trigger.misc.getUserFlag(300) == 1 then
 
 	if trigger.misc.getUserFlag(202) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('Le Molay')
-		local zntgt = bc:getZoneByName('Caen')
-            if znsrc and znsrc.side == 1 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(1)
+		local route = bc.trainSupplyRoutesByGroup['AXE_Train_Le Molay-resupply-Caen']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 1 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
@@ -5033,21 +4748,22 @@ if trigger.misc.getUserFlag(300) == 1 then
 
 	if trigger.misc.getUserFlag(204) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('Saint-Andre')
-		local zntgt = bc:getZoneByName('Bernay')
-            if znsrc and znsrc.side == 1 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(1)
+		local route = bc.trainSupplyRoutesByGroup['AXE_Train_Saint-Andre-resupply-Bernay']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 1 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
-					return L10N:Format("NORMANDY_ZONE_IS_SIDE", "Bernay", L10N:Get("ZONE_SIDE_BLUE"))
+					return L10N:Format("NORMANDY_ZONE_IS_SIDE", "Saint-Andre", L10N:Get("ZONE_SIDE_BLUE"))
 				end
 			else
 				--trigger.action.outText("Cherbourg is not Red, cannot capture or upgrade Valognes", 10)
-				return L10N:Format("NORMANDY_ZONE_NOT_SIDE", "Saint-Andre", L10N:Get("ZONE_SIDE_RED"))
+				return L10N:Format("NORMANDY_ZONE_NOT_SIDE", "Bernay", L10N:Get("ZONE_SIDE_RED"))
             end
 		trigger.action.setUserFlag(204, 0)
 	end
@@ -5055,13 +4771,14 @@ if trigger.misc.getUserFlag(300) == 1 then
 
 	if trigger.misc.getUserFlag(205) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('Le Havre')
-		local zntgt = bc:getZoneByName('Fecamp')
-            if znsrc and znsrc.side == 1 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(1)
+		local route = bc.trainSupplyRoutesByGroup['AXE_Train_Le Havre-resupply-Fecamp']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 1 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
@@ -5077,13 +4794,14 @@ if trigger.misc.getUserFlag(300) == 1 then
 
 	if trigger.misc.getUserFlag(206) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('Le Havre')
-		local zntgt = bc:getZoneByName('Rouen')
-            if znsrc and znsrc.side == 1 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(1)
+		local route = bc.trainSupplyRoutesByGroup['AXE_Train_Le Havre-resupply-Rouen']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 1 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
@@ -5098,13 +4816,14 @@ if trigger.misc.getUserFlag(300) == 1 then
 
 	if trigger.misc.getUserFlag(207) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('Paris')
-		local zntgt = bc:getZoneByName('Fecamp')
-            if znsrc and znsrc.side == 1 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(1)
+		local route = bc.trainSupplyRoutesByGroup['AXE_Train_Paris-resupply-Fecamp']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 1 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
@@ -5119,13 +4838,14 @@ if trigger.misc.getUserFlag(300) == 1 then
 
 	if trigger.misc.getUserFlag(208) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('Paris')
-		local zntgt = bc:getZoneByName('Saint-Aubain')
-            if znsrc and znsrc.side == 1 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(1)
+		local route = bc.trainSupplyRoutesByGroup['AXE_Train_Paris-resupply-Saint-Aubain']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 1 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
@@ -5140,34 +4860,36 @@ if trigger.misc.getUserFlag(300) == 1 then
 
 	if trigger.misc.getUserFlag(209) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('Dunkirk-Port')
-		local zntgt = bc:getZoneByName('Calais')
-            if znsrc and znsrc.side == 1 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(1)
+		local route = bc.trainSupplyRoutesByGroup['AXE_Train_Dunkirk-Port-resupply-Calais']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 1 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
-					return L10N:Format("NORMANDY_ZONE_IS_SIDE", "Fecamp", L10N:Get("ZONE_SIDE_BLUE"))
+					return L10N:Format("NORMANDY_ZONE_IS_SIDE", "Dunkirk-Port", L10N:Get("ZONE_SIDE_BLUE"))
 				end
 			else
 				--trigger.action.outText("Cherbourg is not Red, cannot capture or upgrade Valognes", 10)
-				return L10N:Format("NORMANDY_ZONE_NOT_SIDE", "Amiens", L10N:Get("ZONE_SIDE_RED"))
+				return L10N:Format("NORMANDY_ZONE_NOT_SIDE", "Calais", L10N:Get("ZONE_SIDE_RED"))
             end
 		trigger.action.setUserFlag(209, 0)
 	end
 
 	if trigger.misc.getUserFlag(210) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('Abbeville')
-		local zntgt = bc:getZoneByName('Amiens')
-            if znsrc and znsrc.side == 1 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(1)
+		local route = bc.trainSupplyRoutesByGroup['AXE_Train_Amiens-resupply-Abbeville']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 1 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
@@ -5183,13 +4905,14 @@ if trigger.misc.getUserFlag(300) == 1 then
 
 	if trigger.misc.getUserFlag(211) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('Abbeville')
-		local zntgt = bc:getZoneByName('Le Touquet')
-            if znsrc and znsrc.side == 1 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(1)
+		local route = bc.trainSupplyRoutesByGroup['AXE_Train_Abbeville-resupply-Le Touquet']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 1 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
@@ -5202,36 +4925,16 @@ if trigger.misc.getUserFlag(300) == 1 then
 		trigger.action.setUserFlag(211, 0)
 	end
 
-	if trigger.misc.getUserFlag(211) == 1 then
-		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('Calais')
-		local zntgt = bc:getZoneByName('Dunkirk-Port')
-            if znsrc and znsrc.side == 1 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(1)
-					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 1 then
-					applyTrainSupply(zntgt)
-					--trigger.action.outText("Valognes upgraded ", 10)
-				else
-					return L10N:Format("NORMANDY_ZONE_IS_SIDE", "Dunkirk-Port", L10N:Get("ZONE_SIDE_BLUE"))
-				end
-			else
-				--trigger.action.outText("Cherbourg is not Red, cannot capture or upgrade Valognes", 10)
-				return L10N:Format("NORMANDY_ZONE_NOT_SIDE", "Calais", L10N:Get("ZONE_SIDE_RED"))
-            end
-		trigger.action.setUserFlag(211, 0)
-	end
-
 	if trigger.misc.getUserFlag(212) == 1 then
 		--trigger.action.outText("Falg Valognes = 1 trigg ", 10)
-		local znsrc = bc:getZoneByName('Paris')
-		local zntgt = bc:getZoneByName('Orly')
-            if znsrc and znsrc.side == 1 then 
-				if zntgt and zntgt.side == 0 then
-					zntgt:capture(1)
+		local route = bc.trainSupplyRoutesByGroup['AXE_Train_Paris-resupply-Orly']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
 					--trigger.action.outText("Valognes captured ", 10)
-				elseif zntgt and zntgt.side == 1 then
+				elseif zntgt.side == znsrc.side then
 					applyTrainSupply(zntgt)
 					--trigger.action.outText("Valognes upgraded ", 10)
 				else
@@ -5242,6 +4945,42 @@ if trigger.misc.getUserFlag(300) == 1 then
 				return L10N:Format("NORMANDY_ZONE_NOT_SIDE", "Paris", L10N:Get("ZONE_SIDE_RED"))
             end
 		trigger.action.setUserFlag(212, 0)
+	end
+
+	if trigger.misc.getUserFlag(213) == 1 then
+		local route = bc.trainSupplyRoutesByGroup['AXE_Train_Bernay-resupply-Caen']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
+				elseif zntgt.side == znsrc.side then
+					applyTrainSupply(zntgt)
+				else
+					return L10N:Format("NORMANDY_ZONE_IS_SIDE", "Bernay", L10N:Get("ZONE_SIDE_BLUE"))
+				end
+			else
+				return L10N:Format("NORMANDY_ZONE_NOT_SIDE", "Caen", L10N:Get("ZONE_SIDE_RED"))
+            end
+		trigger.action.setUserFlag(213, 0)
+	end
+
+	if trigger.misc.getUserFlag(214) == 1 then
+		local route = bc.trainSupplyRoutesByGroup['AXE_Train_Paris-resupply-Saint-Andre']
+		local znsrc = route.fromZone
+		local zntgt = route.toZone
+            if znsrc.side ~= 0 then
+				if zntgt.side == 0 then
+					zntgt:capture(znsrc.side)
+				elseif zntgt.side == znsrc.side then
+					applyTrainSupply(zntgt)
+				else
+					return L10N:Format("NORMANDY_ZONE_IS_SIDE", "Saint-Andre", L10N:Get("ZONE_SIDE_BLUE"))
+				end
+			else
+				return L10N:Format("NORMANDY_ZONE_NOT_SIDE", "Paris", L10N:Get("ZONE_SIDE_RED"))
+            end
+		trigger.action.setUserFlag(214, 0)
 	end
 end
 

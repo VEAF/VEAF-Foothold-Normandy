@@ -41,11 +41,16 @@ FootholdConfigTrackedTableNames = {
     "AllowedFlightTimeReward",
     "ewrs_specialPlaneTypes",
     "AllowedWW2Planes",
+    "AllowedWW2RedPlanes",
 }
 -- Add new top-level scalar settings here so an omitted external setting triggers the warning.
 FootholdConfigTrackedScalarNames = {
-    "ZoneSelfRepairAndUpgradeTime",
+    "ewrs_enabled",
     "PlayerZoneSuppliesConsumeStock",
+    "ZoneCaptureBuildSeconds",
+    "NormalSupplyCapacity",
+    "WarehouseSupplyCapacity",
+    "ExtraRedRepairTimeLowPlayerCountPercent",
 }
 
 local function applyExternalConfigWithFallbackWarning()
@@ -485,6 +490,21 @@ CallsignOverrides = {
 -- Logistics / Warehouse
 -- ============================================================================
 
+-- How many seconds a neutral-zone capture takes after a valid delivery arrives.
+-- Set to 0 to capture immediately.
+-- @gui label="Neutral Zone Capture Time" editor="seconds"
+ZoneCaptureBuildSeconds = 120
+
+-- How many ready supplies a normal zone produces before automatic production pauses.
+-- Player-delivered supplies can still be stored above this amount.
+-- @gui label="Normal Zone Supply Capacity" validValues="1=1 | 2=2 | 3=3"
+NormalSupplyCapacity = 1
+
+-- How many ready supplies a [WH] zone produces before automatic production pauses.
+-- Player-delivered supplies can still be stored above this amount.
+-- @gui label="Warehouse Supply Capacity" validValues="3=3 | 4=4 | 5=5 | 6=6"
+WarehouseSupplyCapacity = 6
+
 -- Supply mission and ready-supply production speed scaling.
 -- This multiplier affects AI supply mission timers and ready-supply production times.
 -- 1.0 = normal speed
@@ -496,8 +516,26 @@ CallsignOverrides = {
 -- @gui label="Supply Speed Scaling" editor="sideMultiplier" min="0.10" max="5.00" step="0.05" timePreviewRed="Normal zone:1200" timePreviewBlue="Normal zone:1200 | [WH]:600"
 GlobalSettings.supplyDifficultyScaling = { [1]=1.0, [2]=1.0 }
 
--- Time in seconds for zones to repair or upgrade its own zone using one ready supply.
-ZoneSelfRepairAndUpgradeTime = 300
+-- Scales repair, rebuild, and installation time after supplies are available.
+-- 0.5 = twice as fast
+-- 1.0 = normal speed
+-- 1.5 = 50% slower
+--
+-- Red normal speed: 1 minute per unit, 3 minutes per sensor, maximum 20 minutes.
+-- Blue normal speed: 15 minute normal-zone base or 5 minute [WH] base + 2 minutes per unit or 3 minutes per sensor, maximum 20 minutes.
+-- Blue has a base time because Blue zones consume supplies directly from their own storage.
+-- Red has no base time here because Red must first wait for supplies delivered from another zone.
+-- Player, CTLD, airdropped, zsup3, and supplies2 supplies skip the Blue base time.
+-- Supply production, dispatch, and travel times are not changed by this setting.
+-- @gui label="Repair Time Scaling" editor="sideMultiplier" min="0.10" max="5.00" step="0.05" timePreviewRed="Unit:60 | Sensor:180 | Maximum:1200" timePreviewBlue="Normal base:900 | [WH] base:300 | Expedited base:0 | Unit:120 | Sensor:180 | Maximum:1200"
+GlobalSettings.repairDifficultyScaling = { [1]=1.0, [2]=1.0 }
+
+-- Extra time for Red repairs and construction when fewer than 2 eligible Blue CAS players are present.
+-- Uses the cached CAS player list, excluding BlueCasCountIgnoreTypes, once when the job starts.
+-- Adds to the scaled starting duration; later damage-driven timer updates remain unchanged.
+-- 0 disables the extra time (default). Maximum 50% extra time. Blue and supply travel times are unchanged.
+-- @gui label="Extra Red Repair Time — Low Player Count %" validValues="Disabled=0 | 5%=5 | 10%=10 | 15%=15 | 20%=20 | 25%=25 | 30%=30 | 35%=35 | 40%=40 | 45%=45 | 50%=50"
+ExtraRedRepairTimeLowPlayerCountPercent = 0
 
 -- If true, player-picked Zone supplies consume one ready supply package from the campaign zone.
 -- Returned or removed cargo restores that package; destroyed or delivered cargo does not.
@@ -530,6 +568,11 @@ AllowedToCarrySupplies = {
 -- Shop / Rewards
 -- ============================================================================
 
+-- Get extra reward if player keeps the same aircraft after a successful credits redeem and then another sortie with another credits redeem.
+-- Percentage of extra credits. 0 disables the reward, 10 is the default, and 50 is the maximum.
+-- @gui label="Same Aircraft Extra Reward %" validValues="Disabled=0 | 5%=5 | 10%=10 | 15%=15 | 20%=20 | 25%=25 | 30%=30 | 35%=35 | 40%=40 | 45%=45 | 50%=50"
+TurnaroundRewardPercent = 10
+
 -- Shop prices.
 -- @gui installPolicy="mergeRows"
 ShopPrices = {
@@ -548,7 +591,8 @@ ShopPrices = {
 	zinf          = 500,  -- Add infantry squad to zone
 	zsam          = 1000, -- Add AA guns to a zone
 	zewr          = 1000, -- Add Early Warning Radar to a zone
-	zlogc         = 2000, -- Make a zone logistic center
+	zlogc         = 5000, -- Make a zone logistic center
+	ztrainrepair  = 2000, -- Repair a destroyed train route between Blue zones
 	zsup3         = 750,  -- Add 3 supplies to a zone
 	zarm          = 1000, -- Add armor group to a zone
 	gslot         = 3000, -- Unlock extra upgrade slot
@@ -573,6 +617,7 @@ ShopRankRequirements = {
 	zsam           = 6,  -- Add AA guns to a zone
 	zewr           = 2,  -- Add Early Warning Radar to a zone
 	zlogc          = 1,  -- Make a zone logistic center
+	ztrainrepair   = 1,  -- Repair a destroyed train route between Blue zones
 	zsup3          = 2,  -- Add 3 supplies to a zone
 	zarm           = 7,  -- Add armor group to a zone
 	gslot          = 9,  -- Unlock extra upgrade slot
@@ -685,6 +730,9 @@ AllowedFlightTimeReward = {
 -- EWRS
 -- ============================================================================
 
+-- @gui label="Enable EWRS" validValues="Enabled=true | Disabled=false"
+ewrs_enabled = true -- Enable EWRS reports and F10 menus. Requires mission restart; load the config before EWRS.lua.
+
 -- @gui validValues="Style 1=1 | Style 2=2"
 ewrs_defaultReportStyle = 2 -- Default EWRS report format. Style 1 keeps the current format. Style 2 uses compact separator lines. Players can change this via the F10 EWRS menu.
 
@@ -767,9 +815,34 @@ phaseCycleTimerIdle = 0.5      -- Relaxed cadence when idle. Raise to 0.8-1.0 if
 -- ============================================================================
 -- Aircraft
 -- ============================================================================
--- Aircraft that remain available in Normandy/WW2 warehouse aircraft stocks.
--- @gui label="Allowed WW2 Warehouse Aircraft" installPolicy="mergeRows" editor="bucket"
+-- Aircraft that remain available in Blue Normandy/WW2 warehouse aircraft stocks.
+-- @gui label="Allowed Blue WW2 Warehouse Aircraft" installPolicy="mergeRows" editor="bucket"
 AllowedWW2Planes = {
+	"Bf-109K-4",
+	"F4U-1D",
+	"F4U-1D_CW",
+	"FW-190A8",
+	"FW-190D9",
+	"I-16",
+	"La-7",
+	"MosquitoFBMkVI",
+	"P-47D-30",
+	"P-47D-30bl1",
+	"P-47D-40",
+	"P-51D",
+	"P-51D-25-NA",
+	"P-51D-30-NA",
+	"SpitfireLFMkIX",
+	"SpitfireLFMkIXCW",
+	"TF-51D",
+	"Yak-52",
+	"Ju-88A4",
+	"B-17G",
+}
+
+-- Aircraft that remain available in Red and neutral Normandy/WW2 warehouse aircraft stocks.
+-- @gui label="Allowed Red WW2 Warehouse Aircraft" installPolicy="mergeRows" editor="bucket"
+AllowedWW2RedPlanes = {
 	"Bf-109K-4",
 	"F4U-1D",
 	"F4U-1D_CW",
