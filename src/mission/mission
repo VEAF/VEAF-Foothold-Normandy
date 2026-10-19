@@ -69944,7 +69944,7 @@ mission =
       [8] = 66,
     },
   },
-  currentKey = 3973293,
+  currentKey = 3987048,
   date = {
     Day = 6,
     Month = 7,
@@ -84039,11 +84039,11 @@ mission =
     },
   },
   map = {
-    centerX = 69296.833773089,
+    centerX = 104932.37467019,
     centerY = 15000,
     zoom = 452506.59630607,
   },
-  maxDictId = 130,
+  maxDictId = 132,
   pictureFileNameB = {},
   pictureFileNameN = {},
   pictureFileNameR = {},
@@ -84077,11 +84077,11 @@ mission =
   trig = {
     actions = {
       [1] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_41\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_101\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_67\"));",
-      [2] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_130\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_128\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_129\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_105\"));",
+      [2] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_132\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_128\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_129\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_105\"));",
       [3] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_9\"));a_do_script_file(getValueResourceByKey(\"ResKey_Action_65\")); mission.trig.func[3]=nil;",
       [4] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_68\")); mission.trig.func[4]=nil;",
       [5] = "a_end_mission(\"blue\", getValueDictByKey(\"DictKey_ActionText_37\"), 0); mission.trig.func[5]=nil;",
-      [6] = "a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_49\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_70\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_53\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_54\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_72\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_73\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_75\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_80\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_83\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_84\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_85\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_96\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_97\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_111\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_112\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_115\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_116\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_117\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_118\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_119\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_120\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_121\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_122\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_123\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_124\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_125\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_126\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_127\"), 0); mission.trig.func[6]=nil;",
+      [6] = "a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_49\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_70\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_53\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_54\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_72\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_73\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_75\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_80\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_83\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_84\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_85\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_96\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_97\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_111\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_112\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_115\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_116\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_117\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_118\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_119\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_120\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_121\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_122\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_123\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_124\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_125\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_126\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_127\"), 0);a_out_sound_c(1, getValueResourceByKey(\"ResKey_Action_131\"), 0); mission.trig.func[6]=nil;",
     },
     conditions = {
       [1] = "return(true)",
@@ -94620,7 +94620,7 @@ mission =
     [2] = {
       actions = {
         [1] = {
-          file = "ResKey_Action_130",
+          file = "ResKey_Action_132",
           predicate = "a_do_script_file",
         },
         [2] = {
@@ -94821,6 +94821,12 @@ mission =
         [28] = {
           countrylist = 1,
           file = "ResKey_Action_127",
+          predicate = "a_out_sound_c",
+          start_delay = 0,
+        },
+        [29] = {
+          countrylist = 1,
+          file = "ResKey_Action_131",
           predicate = "a_out_sound_c",
           start_delay = 0,
         },
